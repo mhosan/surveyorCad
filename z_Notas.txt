@@ -1,4 +1,6 @@
-﻿Quiero ser capaz de buscar eficazmente una matriz para el contenido de una cadena.
+﻿Hoy es 9 de noviembre de 2023, y aqui estamos!
+
+Quiero ser capaz de buscar eficazmente una matriz para el contenido de una cadena.
 Ejemplo:
 
 dim arr() as string={"ravi","Kumar","Ravi","Ramesh"}
