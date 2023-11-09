@@ -1,0 +1,68 @@
+' FUNCIONES
+' PASAR CON ENTER
+'======================================================================================== 
+Public Sub PasarConEnter()
+ 
+If e.KeyChar = ChrW(Keys.Enter) Then
+
+            e.Handled = True
+
+            SendKeys.Send("{TAB}")
+        End If
+
+end sub
+'========================Si esta vacio el string=========================================
+If String.IsNullOrEmpty(s) Then
+    Console.WriteLine("La cadena está vacía o tiene un valor nulo.")
+Else
+    Console.WriteLine("La cadena es: '{0}' y tiene {1} caracteres.", s, s.Length)
+End If
+'================Guardar archivos========================================================
+Private Sub Button2_Click(ByVal sender As System.Object, _
+ByVal e As System.EventArgs) Handles Button2.Click
+   ' Displays a SaveFileDialog so the user can save the Image
+   ' assigned to Button2.
+   Dim saveFileDialog1 As New SaveFileDialog()
+   saveFileDialog1.Filter = "JPeg Image|*.jpg|Bitmap Image|*.bmp|Gif Image|*.gif"
+   saveFileDialog1.Title = "Save an Image File"
+   saveFileDialog1.ShowDialog()
+   
+   ' If the file name is not an empty string open it for saving.
+   If saveFileDialog1.FileName <> "" Then
+      ' Saves the Image via a FileStream created by the OpenFile method.
+      Dim fs As System.IO.FileStream = Ctype _
+         (saveFileDialog1.OpenFile(), System.IO.FileStream)
+      ' Saves the Image in the appropriate ImageFormat based upon the
+      ' file type selected in the dialog box.
+      ' NOTE that the FilterIndex property is one-based.
+      Select Case saveFileDialog1.FilterIndex
+         Case 1
+            Me.button2.Image.Save(fs, _
+               System.Drawing.Imaging.ImageFormat.Jpeg)
+
+         Case 2
+            Me.button2.Image.Save(fs, _
+               System.Drawing.Imaging.ImageFormat.Bmp)
+
+         Case 3
+            Me.button2.Image.Save(fs, _
+               System.Drawing.Imaging.ImageFormat.Gif)
+       End Select
+
+       fs.Close()
+    End If
+End Sub
+'========================================================================================
+CREAR DIRECTORIOS
+ If Directory.Exists("c:\Imagenes") Then ' + archivo + ".jpg") Then
+        Else
+            Directory.CreateDirectory("c:\Imagenes")
+        End If
+    End Sub
+=========================================================================================
+LEER ARCHIVOS DE TEXTO
+ Dim file As New System.IO.StreamReader("c:\test.txt")
+        Dim words As String = file.ReadToEnd()
+        file.Close()
+        MsgBox(words)
+=========================================================================================

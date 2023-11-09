@@ -1,0 +1,1838 @@
+//////////////////comments
+//////////////////This is a globalization text document and should be placed in your spplication folder.
+//////////////////Vdrawstring^yourlocalstring
+//////////////////The first string must be unique.You cannot have 2 different "Center" lines
+/////////////////If you don't want to change a string simply retype the english version on the left or delete the line or comment it using the '//' 
+/////////////////characters
+/////////////////If the first name represent a property name and the second value is '-' then the property is hidden from property grid 
+
+GlobalizedFormsDirectory^c:\cpacad2\mhcadt\vdFormsRes.dll
+///GlobalizedFormsDirectory^c:\desamhcad\desadotnet\mhcad\mhcad\obj\x86\release\mhcadt\vdFormsRes.dll
+
+//////////////////menu
+Grid ON^Grilla SI
+Grid OFF^Grilla NO
+PAPER^PAPEL
+MODEL^MODELO
+Snap OFF^Pegado a grilla NO
+Snap ON^Pegado a grilla SI
+Ortho ON^Ortogonal SI
+Ortho OFF^Ortogonal NO
+Osnap ON^Osnap SI
+Osnap OFF^Osnap NO
+Add Layout^Agregado rapido Lamina (Layout)
+Delete Layout^Borrar Lamina (Layout)
+Add Reference Viewport^Agregar ventana desde entidad
+
+
+//////////////////vdObject
+Handle^Identificador
+Gets a unique object for the Document that represents the handle of the object.^Identificador único para el documento
+
+
+
+
+//////////////////vdPrimary
+Deleted^Borrado
+Get/Set a property that marks the object as Deleted or not.^Propiedad que marca al objeto como borrado o no
+Label^Cartel
+Get/Set a label string for the object.^Texto que se puede adjuntar al objeto.
+XProperties^PropiedadesX
+Gets the Collection of vdXproperties of the object.^Coleccion de propiedades extendidas.
+
+
+
+
+
+//////////////////vdFigure
+HighLight^Resaltar
+Get/Set the value indicating if the lines of the object will be drawn as dashed.^Valor que indica si las lineas del objeto se dibujan de trazo.
+Layer^Capa
+Get/Set the vdLayer object of the vdFigure.^Capa (layer) de la figura.
+visibility^Visibilidad
+Get/Set the Visibility of the object.^Visibilidad de un objeto.
+PenColor^Color
+Get/Set the vdColor object that the vdFigure will be drawn with.^Color de un objeto
+LineType^Tipo de linea
+Get/Set the vdLinetype object that the vdFigure will be drawn with.^Tipo de linea de un objeto
+PenWidth^Ancho de punta
+Get/Set the PenWidth in Drawing Units of the object.^Espesor de punta en unidades de dibujo del objeto seleccionado. Para cambiar ESCRIBIR el valor y oprimir ENTER. NO USAR BOTON CON TRES PUNTOS.
+URL^URL
+Get/Set a string representing the URL of the object.^URL de un objeto.
+ToolTip^Texto de ayuda
+Get/Set a string representing the Tooltip of the object.^Texto de ayuda de un objeto
+LineTypeScale^Esc.tipo linea
+Get/Set The Linetype scale of the object.^Escala de tipo de linea de un objeto.
+
+
+
+
+
+
+
+//////////////////vdInfinityLine
+Get/Set the Base point of the vdInfinityLine object.^Punto base para lineas infinitas.
+InfinityType^Lineas Infinitas
+Get/Set the type of the infinity line.^Tipo de linea infinita
+Get/Set the Direction of the vdInfinityLine object.^Direccion de lineas infinitas.
+
+
+
+
+
+
+//////////////////vdCurve
+Thickness^Altura 3D
+Get/Set the object's thickness in Drawing Units.^Altura en 3D, en unidades de dibujo del objeto.
+ExtrusionVector^Vector Extrusión
+Get/Set the 3D vector extrusion direction for the object.^Dirección del vector 3D de extrusión.
+
+
+
+
+
+
+//////////////////vdArc
+Center^Centro
+Get/Set the Center of the vdArc object in World Coordinate System.^Centro del arco en coordenadas universales (World Coordinate System - WCS)
+Radius^Radio
+Get/Set the radius of the vdArc object.^Radio del arco
+EndAngle^Angulo final
+Get/Set the end angle of the vdArc object.^Angulo final del arco.
+StartAngle^Angulo Inicial
+Get/Set the start angle of the vdArc object.^Angulo inicial del arco
+HatchProperties^Propiedades de tramado
+Get/Set the hatch properties of the vdArc object.^Propiedades de trama del arco.
+
+
+
+
+
+//////////////////vdCircle
+//You cannot add the Center here since it is already added in the vdArc object and this applies to the following objects with "same name" 
+//properties.So for this properties you will find only the property list description because it is different for each object.
+Get/Set the Center of the vdCircle object in World Coordinate System.^Centro del circulo en coordenadas universales.
+Get/Set the radius of the vdCircle object.^Radio del circulo.
+Get/Set the hatch properties of the vdCircle object.^Propiedades de trama del circulo.
+
+
+
+
+
+
+//////////////////vdEllipse
+Get/Set the Center of the vdEllipse object.^Centro de la elipse.
+Get/Set the end angle of the vdEllipse object.^Angulo final de la elipse.
+Get/Set the start angle of the vdEllipse object.^Angulo inicial de la elipse.
+MajorLength^Eje mayor
+Get/Set the Major Length of a vdEllipse object.^Longitud del eje mayor de la elipse.
+MinorLength^Eje menor
+Get/Set the Minor Length of the vdEllipse object^Longitud del eje menor de la elipse.
+MajorAngle^Angulo mayor
+Get/Set the MajorAngle of the vdEllipse object.^Angulo mayor de la elipse.
+Get/Set the hatch properties of the vdEllipse object.^Propiedades de tramado de la elipse.
+
+
+
+
+
+
+
+//////////////////vdImage
+Display^Visualizacion
+Get/Set the Display property of the vdImage object.^Propiedades de visualizacion de la imagen.
+ImageScale^Escala
+Get/Set the image scale.^Escala de la imagen.
+ImageDefinition^Definicion.
+Get/Set the vdImageDef object of the image indicating the Image Definition of the object.^Definicion de la imagen.
+ClipBoundary^Recorte
+Get/Set a collection of points indicating a boundary to clip the image.^Coleccion de puntos indicadores del recorte de imagen.
+Get/Set the width of the vdImage object in Drawing units.^Ancho de imagen en unidades de dibujo.
+Get/Set the height of the vdImage object in Drawing units.^Altura de imagen en unidades de dibujo.
+
+
+
+
+
+
+
+//////////////////vdLine
+StartPoint^Punto Inicial
+Get/Set the start point of the vdLine object.^Punto inicial de una linea. 
+EndPoint^Punto Final
+Get/Set the end point of the vdLine object.^Punto final de una linea.
+
+
+
+
+
+
+
+//////////////////vdPolyline
+VertexList^Vertices
+Get/Set the vertex list of the vdPolyline object.^Lista de los vertices de una polilinea.
+StartTangent^Tangente Inicial
+Get/Set the start Tangent of the vdPolyline object used when SPlineFlagis SFlagFITTING.^Tangente inicial de la polilinea utilizado en el ajuste.
+EndTangent^Tangente final
+Get/Set the end Tangent of the vdPolyline object used when SPlineFlag is SFlagFITTING.^Tangente final de la polilinea utilizado en el ajuste.
+Weights^Espesor
+Get/Set the weights of the vdPolyline object used when SPlineFlag is not SFlagSTANDARD.^
+SPlineFlag^Tipo
+Get/Set the Spline flag of the vdPolyline object representing which type of Spline will be used.^Que tipo de curva se usa para polilinea
+Flag^Estado
+Get/Set a flag indicating if the polyline is closed or open.^Indicador si la poliliena es abierta o cerrada.
+Get/Set the hatch properties of the vdPolyline object.^Propiedades de tramado para la polilinea.
+
+
+
+
+
+
+//////////////////vdRect
+Height^Altura
+Get/Set the height of the rectangle in drawing units^altura del rectangulo en unidades de dibujo.
+Rotation^Rotacion.
+Get/Set the vertical rotation angle in radians of the rectangle.^Rotacion vertical en radianes del rectangulo.
+InsertionPoint^Punto de insercion.
+Get/Set the lower left point of the rectangle in Woorld Coordinate System(WCS).^Esquina inferior izquierda del rectangulo en coordenadas universales (Woorld Coordinate System - WCS)
+Width^Ancho
+Get/Set the width of the rectangle in drawing units.^Ancho del rectangulo en unidades de dibujo.
+Get/Set the hatch properties of the vdRect object.^Propiedades de tramado del rectangulo.
+
+
+
+
+
+
+//////////////////vd3DFace
+Get/Set the vertex list of the vd3DFace object.^Lista de vertices de la cara 3d
+EdgeVisibility^Visibilidad
+Get/Set the visibilty of 4 sides of 3dface object(1,2,4,8).^Visibilidad del objeto cara 3d.
+
+
+
+
+
+
+
+
+/////////////////vdText
+ExtraOveride^Extras
+Specifies Extra draw properties for the text.^Propiedades extra para textos.
+TextLine^texto
+Specifies if any lines will be drawn with the text using TextLineFlags flag.^Indica si alguna linea de texto se dibuja utilizando el indicador TextLineFlags
+ObliqueAngle^Angulo texto
+Oblique angle for the text in degrees.^Angulo del texto en grados.
+Bold^Negrita
+Get/Set a boolean value indicating if the text is bold.^Valor logico (si/no) que indica si se usa negrita
+Get/Set the Insertion point of the text in Woorld Coordinate System(WCS).^Punto de insercion del texto en coordenadas universales (World Coordinate System - WCS)
+Get/Set the height of the text in drawing units.^Altura de texto en unidades de dibujo.
+Get/Set the rotation of the text in radians.^Rotacion del texto en radianes.
+TextString^Contenido
+Get/Set the string that the vdText object will draw.^El contenido del objeto Texto.
+Style^Estilo
+Get/Set the vdTextstyle object of the vdText.^Estilo de texto.
+VerJustify^Justif.Vert.
+Get/Set the vertical Justification of the text.^Justificacion vertical.
+HorJustify^Justif.Hor.
+Get/Set the horizontal justification of the text.^Justificacion vertical.
+Get/Set a flag indicating how the letters of the text will be drawn.^Como seran dibujados los caracteres en el texto.
+WidthFactor^Factor de ancho
+Get/Set a value used to stretch the vdText object by changing it's width.^Valor utilizado para comprimir/expandir el texto.
+AlignmentPoint^Punto de alineacion
+Get/Set a point used to stretch the object when HorJustify is Fit or Aligned.^Punto para comprimir/expandir cuando justificacion horizontal es Ajustar(fit) o Alinear(aligned).
+
+
+
+
+
+
+
+//////////////////vdAttrib
+Gets the Value string of the vdAttrib object.^Valor del atributo
+IsConstant^Atrib. Constante
+Get/Set a value indicating if the Attribute Definition of the object is constant.^Indica si el atributo es Constante.
+InVisibleMode^Invisible
+Get/Set the visibility property of the vdAttrib object.^Visibilidad del atributo
+ValueString^Valor
+Get/Set the default value string of the vdAttrib object.^Valor por defecto del atributo
+TagString^Aviso	
+Get/Set the string which identifies each occurrence of the attribute.^Aviso que sale cuando ocurre la insercion del atributo.
+
+
+
+
+
+
+
+//////////////////vdAttribDef
+Gets the Value string of the vdAttribDef object.^Valor de definicion del atributo
+Get/Set a value indicating if the Attribute Definition is constant.^Valor que indica si el atributo es constante.
+Get/Set if the attributes will be visible or not.^Visibilidad del atributo. Si o no.
+Get/Set the default value string of the vdAttribDef object.This value will get by default vdAttrib objects when inserted.^Valor por defecto al insertar.
+PromptString^Aviso
+Get/Set the prompt string.^Texto que se visualiza para insertar el atributo.
+
+
+
+
+
+
+
+////////////////vdDimension
+DefPoint1^Punto Uno
+Get/Set the Definition point 1 of a vdDimension object in WCS.^Primer punto de la cota en coordenadas universales (World Coordinate System - WCS)
+
+DefPoint2^Punto Dos
+Get/Set the Definition point 2 of a vdDimension object in WCS.^Segundo punto de la cota en coordenadas universales (world Coordinate System - wcs)
+
+DefPoint3^Punto tres
+Get/Set the Definition point 3 of a vdDimension object in WCS.^Tercer punto de la cota en coordenadas universales (World Coordinate System - WCS)
+
+DefPoint4^Punto Cuatro
+Get/Set the Definition point 4 of a vdDimension object in WCS.^Cuarto punto de la cota en coordenadas universales (World Coordinate System - WCS)
+TextPosition^Posicion Texto
+
+Get/Set the text position of the dimension in WCS.^Posicion del texto en la cota.
+LinePosition^Posicion linea
+
+Get/Set the line position of the dimension in WCS.^Ubicacion de linea de cota en coordenadas universales (World Coordinate System - WCS)
+Get/Set the vdDimstyle of the vdDimension object.^Estilo de cota
+
+dimText^Texto de cota
+Get/Set the dimension's text.^Texto de la cota
+
+dimType^Tipo
+Get/Set the dimension's type.^Tipo de cota
+
+UsingDefaultTextPosition^Usar posicion por defecto
+Get/Set a boolean value representing the dimension's text position.^Valor logico (si/no) que representa la posicion del texto
+Get/Set the rotation of the dimension in radians.^Rotacion de la cota en radianes.
+
+Oblique^Oblicuo
+Get/Set the oblique angle of the dimension in radians.^Angulo de la cota en radianes
+
+DimLength^Medida
+Get the length measured by the dimension in drawing units.^Valor de medición de la cota en unidades de dibujo.
+
+ArrowBlock^Bloque de cota
+Get/Set the vdBlock object used by the dimension as arrow.^Bloque utilizado como marcas de cota.
+
+ArrowSize^Medida de flecha
+Get/Set the arrow size of the dimension.^Medida de la flecha de la cota
+
+TextStyle^Estilo texto
+Get/Set the vdTextstyle object used for the dimension's text.^Estilo de texto para las cotas.
+
+TextHeight^Altura de texto
+Get/Set the Dimension's text height in drawing units.^Altura del texto de las  cotas en unidades de dibujo
+
+TextDist^Distancia texto
+Get/Set the distance around the dimension's text.^Distancia alrededor del texto de la cota.
+
+TextVerJust^Justif.Vert.
+Get/Set the vertical justification of dimension text along the dimension line.^Justificacion vertical del texto de la cota.
+
+TextHorRotation^Rotacion
+Get/Set the position of dimension text inside the extension lines(aligned or horizontal)^Ubicacion del texto de la cota en la linea de cotas (alineado o horizontal)
+
+TextColor^Color texto
+Get/Set the dimension's text color.^Color del texto de la cota
+
+ExtLineColor^Ext.Color
+Get/Set the dimension's extension lines color.^Color de la linea de extension de la cota
+
+ExtLineDist1^Ext.Long 1
+Get/Set how far to extend the extension lines beyond the dimension line in drawing units.^Cuanto se extiende la linea de extension mas alla de la linea de cota en unidades de dibujo.
+
+ExtLineDist2^Ext.Long 2
+Get/Set how far extension lines are offset from origin points in drawing units.^Cuanto se extiende la linea de extension mas alla de los puntos origen en unidades de dibujo
+
+ExtLineVisible^Ext.Visible
+Get/Set a boolean value indicating the display of the extension lines.^Indica si la linea de extension es visible.
+
+ScaleFactor^Factor E.
+Get/Set the scale factor of the dimension.^Factor de escala para las cotas.
+
+DecimalPrecision^Precision
+Get/Set the number of decimal places displayed in default dimension text.^Numero de digitos decimales de la cota.
+
+LinearScaleFactor^Factor L.
+Get/Set the scale factor for dimensioning by which the default dimension Length is multiplyed.^Factor de escala del valor medido.
+
+TextMovement^Text M.
+Get/Set a value that represents how the dimension will change according to the dimension's text position change.^Cambio en las cotas de acuerdo a cambios en la posicion del texto.
+
+LineIsInvisible^L.Cota Invis.
+Get/Set the visibility of dimension base line.^Visibilidad de la linea de cota (True=Invisible SI, False=Invisible NO)
+
+DimAunit^Angulos
+Get/Set the units mode for angular dimensions.^Modo de unidades para cotas de angulos.
+
+DimAdec^Angulos Prec.
+Get/Set the number of decimal places for angular dimensions.^Lugares decimales para cotas de angulos.
+
+DimLunit^Cota Uni.
+Get/Set the Units mode for linear dimensions.^Modo de unidades para cotas lineales
+
+DimTol^Cota Tol.
+Appends tolerances to dimension text.^Tolerancias para las cotas.
+
+DimTp^Cota.Tol.L.
+Specifies the tolerance limit for dimension text.^Limite de tolerancia para el texto de la cota.
+
+DimZin^Cota Cero
+Get/Set a value representing the suppression of zeros in the default dimension text value.^Supresion de ceros en la cota por defecto.
+
+DimaZin^Cota Cero Ang.
+Controls the suppression of zeros in the default dimension text value for Angular dimensions.^Supresion de ceros en las cotas de angulos.
+
+DimTm^Cota tol.inf.
+Specifies the tolerance lower limit for dimension text.^Limite inferior para tolerancia.
+
+PostString^Cota Tx.extra
+Specifies a text prefix or suffix (or both) to the dimension measurement.^Prefijo y/o sufijo para las cotas.
+
+DimLineColor^Color Cta y fcha.
+Represents the color of dimension lines and arrowheads.^Color de la linea de cota y flechas.
+
+
+
+
+
+
+
+
+
+/////////////////vdGroundSurface
+GradientFill^
+Specifies if the contours will be drawn as closed filled curves.^
+GradientMinimunColor^
+Specifies the color of the first level of contour curves.^
+GradientMaximunColor^
+Specifies the color of the last level of contour curves.^
+FitContours^
+Specifies if the contours will be drawn as Splines vdPolylines with flag SFlagFITTING.^
+ContourLevels^
+Get/Set an array of doubles indicating the contours of the object.^
+Contours^
+Calculates the contours as vdPolyCurves.^
+Points^
+Get/Set a collection of points needed to draw the surface.^
+DispMode^
+Get/Set the display mode for the vdGroundSurface object.^
+MeshSize^
+Represents the size in drawing units of each mesh when the surface is drawn^
+
+
+
+
+
+
+
+
+/////////////////vdInsert
+Get/Set the the 3D Vector extrusion direction of the vdInsert object.^Direccion del vector 3d de extrusion del objeto insertado.
+Get/Set the Insertion Point of the vdInsert object in World Coordinative System.^Punto de inserción en coordenadas universales (World Coordinate System - WCM)
+Xscale^Escala X
+Get/Set the X Scale Factor of the vdInsert object.^Factor de escala en X
+Yscale^Escala Y
+Get/Set the Y Scale Factor of the vdInsert object.^Factor de escala en y
+Zscale^Escala z
+Get/Set the Z Scale Factor of the vdInsert object.^Factor de escala en z
+Get/Set the Rotation of the vdInsert object in Radians.^Rotacion en radianes
+Block^Bloque
+Get/Set the vdBlock object which refers to the vdInsert object.^Bloque de la insercion
+Attributes^Atributos
+Represents the Attributes collection of the vdInsert object.^Coleccion de atributos del objeto insertado
+Rows^filas
+Get/Set the number of Rows that the vdInsert object will be copied.^Numero de filas en que la insercion sera copiada.
+Columns^Columnas
+Get/Set the number of Columns that the vdInsert object will be copied.^Numero de columnas en que la insercion sera copiada.
+ColumnDist^Distancia Col.
+Get/Set The Column Distance between the copied vdInsert objects.^Distancia entre las columnas insertadas
+RowDist^Distancia Filas
+Get/Set The Row Distance between the copied vdInsert objects.^Distancia entre las filas insertadas.
+
+
+
+
+
+
+///////////////vdMtext
+LineSpaceStyle^Interlineado
+Get/Set the line spacing style of the vdMtext object.^Interlineado de Mtext (espacio entre lineas).
+
+LineSpacingFactor^Factor Interl.
+Get/Set a value adjusting the space be3tween the lines of the Mtext.^Ajuste de interlineado
+
+Get/Set the extrusion vector of the Mtext object.^Vector de extrusion del Mtext
+
+BoxWidth^Ancho Mtext
+The width of the Mtext object in drawing units.Lines are broken if they exceed this value.^Ancho del Mtext en unidades de dibujo. Las lineas que excedan este ancho son quebradas.
+
+Get/Set the insertion point of the vdMtext object in Woorld Coordinate System(WCS).^Punto de insercion del Mtext en coordenadas universales (Woorld Coordinate System - WCS) 
+
+The height of the texts of the Mtext object.^Altura de textos en Mtext.
+
+The rotation of the Mtext object. All texts consisting the object will be rotated using this value.^Rotacion de los Mtext.
+
+The string that describes the Mtext object.^Cadena de texto que describe el Mtext.
+
+This is the default vdTextstyle that the texts will inherit.^Estilo de texto por defecto que heredan los Mtext.
+
+Get/Set the vertical justification of the object.^Justificacion vertical
+
+Get/Set the Horizontal justification of the object.^Justificacion horizontal
+
+
+
+
+
+
+
+///////////////vdLight
+Name^Nombre
+Get/Set the name of the light.^
+Enable^
+Get/Set a boolean value indicating if the light is enabled.^
+TypeOfLight^
+Get/Set the type of the light.^
+SpotDirection^
+Direction vector for spot light.^
+Direction^
+Direction vector only for directional light.^
+Position^
+Position of the light.^
+Intensity^
+Light's intensity.^
+SpotAngle^
+Spot's angle in degrees not used for directional.^
+color^
+Get/Set the color of the Light.^
+VisibleIn2d^
+Get/Set a boolean value indicating if the vdLight object will be drawn when in 2D mode.^
+
+
+
+
+/////////////////////vdPoint
+Get/Set the extrusion vector of the vdPoint object.^Vector de extrusion del objeto punto.
+
+Get/Set the insertion point in Woorld Coordinate System(WCS).^Punto de insercion en coordenadas universales (World Coordinate System - WCS).
+
+
+
+
+////////////////////vdPolyface
+A collection of all points of the vdPolyface object in Woorld Coordinate System(WCS).^
+FaceList^
+A collection of integers indicating each face which 4 points and which color it has.^
+
+
+
+///////////////////vdPolyface
+Get/Set the hatch properties of the vdPolyhatch object.^
+PolyCurves^
+Get the collection of vdCurves constisting the vdPolyface object.^
+
+
+
+
+
+/////////////////vdViewport
+ShowUCSAxis^Ver Ejes
+Get/Set a value representing if the axis will be drawn.^Visualizacion del icono de ejes.
+
+LensAngle^Angulo lente
+Represents the Lens Angle in degrees of the vdViewport object.^Angulo de la lente de la ventana (viewport) en grados.
+
+FocalLength^Dist.Focal.
+Get/Set the focal length of the layout.^Distancia focal de la lamina (layout).
+
+PerspectiveMod^Perspectiva
+Represents if the vdViewport object has Perspective Mode On or Off.^Modo perspectiva de la ventana (viewport) activado o desactivado.
+
+ViewSize^Medida Vista
+Get/Set in Display Coordinative System the Size of the Model View that is presented in the Height of the vdViewport object.^Medida de la vista del modelo en altura de la ventana (viewport).
+
+ViewCenter^Centro de vista.
+Get/Set the view center of the vdViewport object.^Centro de la vista de la ventana (viewport).
+
+RenderMode^Modo Render
+Get/Set the render mode for the vdViewport object.^Modo de renderizado de la ventana (viewport).
+
+BkColorEx^Color de fondo
+Get/Set The Background of the vdViewport object.^Color de fondo de la ventana (viewport).
+
+TwistAngle^Angulo giro
+Get the twist angle of the vdViewport object.^Angulo de giro de la ventana (viewport).
+
+Get/Set the position of the viewport.^Posicion de la ventana (viewport).
+
+Get/Set the width of the viewport.^Ancho de la ventana (viewport).
+
+Get/Set the height of the viewport.^Altura de la ventana (viewport)
+
+ShowHidenEdges^Caras ocultas
+Get/Set a boolean value representing if the edges of the 3dFace object will be shown.^Valor logico que representa si las caras de objetos 3d seran vistas.
+
+FrozenLayerList^Capas desact.
+Get/Set a string array contaning the names of the layers to be frozen ion the viewport.^Matriz de caracteres conteniendo los nombres de las capas desactivadas en la ventana (viewport).
+
+Sections^Secciones
+Returns the Sections Clipping collection.^Coleccion de secciones de cortes.
+Get/Set the vdCurve object in which the viewport is.^En que ventana (viewport) se encuentra la curva.
+
+
+
+
+
+
+
+
+/////////////////vdPrint
+Resolution^Resolucion
+Get/Set the printer's resolution in Dot per inch.^Calibrar resolucion de la impresora en puntos por pulgadas.
+
+MaxBitmapSize^MaximoBit
+Get/Set the maximum Bitmap size to use when printing.^Medida maxima de mapa de bit cuando se imprime.
+
+PrintAsAPIWhenPossible^Imprimir como Api
+Get/Set a boolean value representing the way to use when printing.^Valor logico que representa el modo a usar cuando se imprime.
+
+DocumentName^Nombre documento
+Get/Set a string value that represents the printing document name.^Nombre del documento a imprimir.
+
+OutInBlackWhite^Blanco y negro
+Get/Set a value that represents if the output printing colors are all black.^Valor que representa cuando se imprime ne blanco y negro.
+
+Penwidth^Ancho puntas.
+Get/Set an array of doubles that represent the pen width for each color in the palette in millimeters.^Matriz que representa anchos de lapiceras para cada color de la paleta, en milimetros.
+
+PrinterName^Impresora
+Get/Set the selected printer name.^Nombre de la impresora seleccionada.
+
+LandScape^Apaisado
+Get/Set a boolean value representing the paper orientation.^Valor logico que representa la orientacion del papel.
+
+paperSize^Medida hoja
+Get/Set a Rectangle object which represents the paper size in portrait orientation.^Rectangulo que representa la medida del papel en vertical.
+
+margins^Margenes
+Get/Set the MARGINS of the vdPrint object.^Margenes de impresion.
+
+Hardmargins^Limite papel pulg
+Get the hard paper margins of the selected printer in hundrends of inches in portrait orientation.^Limite de papel de la impresora seleccionada en centesimas de pulgadas en vertical.
+
+PrintableAreaMM^Area
+Get the printable area without hard margins in hundrends of millimeters in current orientation.^Area impresion sin los limites del papel en centesimos de milimetros respecto de la orientacion actual.
+
+HardmarginsMM^Limite papel mm
+Get the hard margins of selected printer in hundrends of millimeters in current orientation.^Limite de papel de la impresora en centesimas de mm respecto de la orientacion actual.
+
+PrintScale^Escala imp.
+Get/Set the PrintiScale of the vdPrint object.^Escala de impresion.
+
+PrintWindow^Ventana imp.
+Get/Set a Box that represents the drawing rectangle to be printed out.The Box is in drawing units in Current View Coordinate System.^Rectangulo a imprimir, en unidades de dibujo en el sistema de coord. actual.
+
+Copies^Copias
+Get/Set the number of copies to be printed out.^Numero de copias a imprimir
+
+
+
+
+
+
+
+/////////////////vdLayout
+Get/Set the view size of View Window in D.U.^Medida de la ventana en unidades de dibujo.
+
+Get/Set the coordinates of the center point of view in Current Coordinate System.^Coord. del punto central de la vista en el sistema de coordenadas actual.
+
+Get/Set a value representing the render mode of the layout object(Wire 2d, render 3d etc...).^Valor que representa el modo de renderizado de la lamina o layout (alambre, 2d, render 3d, etc)
+
+ViewDir^Dir.vista
+Get a vector object representing the view direction of the layout.^Vector que representa la direccion de la vista de la lamina (layout)
+
+Get the angle relative to the world to view plane.^Angulo relativo de la vista
+
+Get/Set the background color of the vdLayout object.^Color de fondo de la lamina
+
+///RenderingQuality^Calidad Render
+Get/Set the rendering quality.^Calidad del renderizado.
+RenderingQuality^-
+
+CurveResolution^Res.Curva
+Get/Set the curve resolution of the vdLayout object.^Resolucion de curvas de la lamina (layout)
+
+PixelSize^Medida punto
+Get the size in Drawing Units of one(1) window pixel.^Medida en unidades de dibujo de un punto de pantalla (pixel)
+
+Represents the Lens Angle in degrees of the vdLayout object.^Angulo de lente en grados de la lamina (layout)
+
+Get/Set the perspective mode of the layout.^Modo de la perspectiva de la lamina (layout)
+
+SnapStyle^Snap
+Get/Set the snap style of the layout.The snap style affects the cursor-axis display.^Estilo del Snap (enganche) de la lamina (layout). Afecta como se ve el cursor.
+
+SnapIso^Snap Isom.
+Get/Set the snap iso for the vdlayout object. The snap iso affects the cursor-axis display.^Snap Isometrico para la lamina. Afecta como se ve el cursor.
+
+SnapAngle^Snap Ang.
+Get/Set the snap angle of the vdlayout object.The snap agnel affectes the grid angle and also the cursor-axis display angle.^Angulo del snap de la lamina (layout). Afecta la grilla y tambien como se ve el cursor.
+
+Get/Set the unique name of the vdlayout object.^Nombre de la lamina (layout)
+
+SpaceMode^Modelo/Papel
+Get/Set the space mode of the layout.^Seleccionar espacio modelo para la lamina (layout).
+
+Limits^Limites
+Get/Set a box representing the lower-left and upper-right limits of drawing for grid displaying.^Limite izquierdo inferior y derecho superior de la grilla.
+
+OrthoMode^Ortogonal
+Get/Set a boolean value that if is true constrains cursor movement to the perpendicular.^Activar/desactivar modo ortogonal.
+
+PolarTrack^Trackin polar
+Get/Set a boolean value that enables/disables the PolarTrackAngle functionality.^Activar/desactivar polar tracking.
+
+PolarTrackAngle^Angulo Track.Polar
+Get/Set the polar track angle in radians.^Angulo polar tracking en radianes
+
+GridSpaceX^Paso de Grilla X
+Get/Set the space between the grid dots in the x direction.^Paso (distancia) entre puntos de la grilla en el eje x
+
+GridSpaceY^Paso de Grilla Y
+Get/Set the space between the grid dots in the y direction.^Paso (distancia) entre puntos de la grilla en el eje y
+
+GridMode^Grilla modo
+Get/Set a boolean value representing the display of the grid dots.^Visualizar la grilla
+
+SnapMode^Modo Snap
+Get/Set a boolean value that enables/disables the mouse movement snaping.^Activar/desactivar Snap.
+
+SnapSpaceX^Snap x
+Get/Set the distance that the mouse snaps in x direction.^Distancia del snap en el eje x
+
+SnapSpaceY^Snap y
+Get/Set the distance that the mouse snaps in y direction.^Distancia del snap en el eje y
+
+SnapBase^Snap base
+Get/Set the snap base point.^Punto base del snap
+
+Printer^Impresora
+
+Get the vdPrinter object of the layout.^Impresora de la ventana (layout)
+
+Get the sections clipping collection of the layout.^Secciones de cortes de la lamina (layout)
+
+Get the collection of vdFigures drawn in this layout.^Entidades dibujadas en esta lamina (layout)
+
+
+
+
+
+
+/////////////////vdBlock
+Entities^Entidades
+Get the collection of entities contained to the vdBlock object.^Coleccion de entidades en el bloque.
+
+Get/Set the name of the vdBlock object.^Nombre del bloque.
+
+Origin^Origen
+Get/Set the origin point of the vdBlock object.^Punto origen del bloque
+
+ExternalReferencePath^Ubicacion Xref
+Get/Set External Reference path when the vdBlock IsXref=true.^Ubicacion de la referencia externa (Xref)
+
+
+
+
+
+
+
+////////////////vdDimstyle
+Represents the name of the vdDimstyle object.^Nombre del estilo de cota.
+
+Get/Set the vdBlock object of the dimension style.^Bloque para el estilo de cota.
+
+Get/Set the arrow size of the dimension style.^Medida de flecha del estilo de cota.
+
+Get/Set the vdTextstyle object of the dimension style.^Estilo de texto para el estilo de cota.
+
+Get/Set the Dimension's text height in drawing units using this dimension style.^Altura del texto de la cota del estilo de cota, en unidades de dibujo.
+
+Get/Set the distance around the dimension's text using this dimension style.^Distancia alrededor del texto de la cota.
+
+Get/Set the vertical justification of the dimension style.^Justificacion vertical del estilo de cota.
+
+Get/Set the position of dimension text inside the extension lines(aligned or horizontal).^Posicion del texto dentro de la linea de cota (alineada o horizontal)
+
+Get/Set the dimension's text color of the dimension style.^Color del texto de la cota.
+
+Get/Set the dimension's style extension lines color.^Color de las lineas de cota.
+
+
+
+
+
+
+
+
+////////////////vdHatchPattern
+Get/Set the name of the vdHatchPattern object.^Nombre de trama.
+
+PatternLines^L.Trama
+Get/Set the Pattern Lines of the object.^Lineas de trama.
+
+
+
+
+
+
+///////////////vdImageDef
+FileName^Archivo
+Get/Set the filename of the vdImageDef's image.^Nombre del archivo de imagen.
+
+Get the width of the image in pixels.^Ancho de imagen en pixels.
+
+Get the height of the image in pixels.^Alto de imagen en pixels.
+
+NumColors^Colores
+Get the number of colors the image has.^Numero de colores de la imagen.
+
+Transparency^Transparencia
+Get/Set the color to be used as transparent for the image.^Color a ser usado como transparente en la imagen.
+
+
+
+
+
+
+
+//////////////vdLayer
+Get/Set the name of the layer.^Capa (layer)
+
+Get/Set the pencolor of the layer.^Color Capa
+
+Get/Set the Linetype of the Layer.^Tipo Linea Capa
+
+Frozen^Congelado
+
+Get/Set a boolean value representing if a layer is frozen or not.^Valor que representa si la capa esta congelada o no.
+
+Lock^Cerrado
+
+Get/Set a boolean value representing if the layer is frozen or not.^Valor que representa si la capa esta cerrada o no.
+
+Get/Set the line weight of the layer.^Espesor linea de capa
+
+
+
+
+
+
+//////////////vdLinetype
+Get/Set the name of the vdLinetype object.^Tipo Linea
+
+Comment^Comentario
+
+Get/Set the comments for the linetype.^Ver/escribir comentario del tipo de linea.
+
+Segments^Segmentos
+
+Get/Set the segments for the linetype.^Segmentos del tipo de linea.
+
+IsDPIScale^Constante
+
+Get/Set a boolean value representing if the linetype will be always the same not depended from the zoom.^Valor logico que representa si el tipo de linea sera constante y no dependiente del zoom.
+
+
+
+
+
+
+
+/////////////vdTextStyle
+FontFile^Tipografia
+Get/Set the font file of the textstyle.^Nombre del tipo de letra utilizada.
+
+BigFontFile^Letra Grande
+Get/Set the Big font file of the textstyle.^Nombre del tipo de letra utilizada para la letra grande.
+
+Get/Set the name of the textstyle.^Nombre del estilo de texto.
+
+Get/Set the Height for the textstyle.^Altura del estilo de texto.
+
+IsItalic^Italica
+Get/Set if the IsItalic property is enabled.^Letra Italica activada.
+
+IsOverLine^Linea arriba
+Get/Set if the grTextStyleExtra.IsOverLine property is enabled.^Linea dibujada sobre el texto, activada o no.
+
+IsUnderLine^Linea abajo
+Get/Set if the grTextStyleExtra.IsUnderLine property is enabled.^Linea dibujada debajo del texto, activada o no.
+
+IsStrikeOut^Tachado
+Get/Set if the grTextStyleExtra.IsStrikeOut property is enabled.^Tachado activado o no.
+
+Get/Set if the grTextStyleExtra.Bold property is enabled.^Tipo Negrita activado o no.
+
+DrawOutline^Caja
+Get/Set if the grTextStyleExtra.DrawOutline property is enabled.^Se dibuja una caja alrededor del texto o no.
+
+Get/Set extra draw properties for the textstyle.^Propiedades extra para el estilo de texto.
+
+CodePage^Pagina cod.
+Get/Set the CodePage used from this Textstyle.^Pagina de codigos para el estilo de texto.
+
+
+
+
+
+
+
+//////////////vdColor
+SystemColor^Color
+Get/Set the vdColor object to get it's value from a system color.^Color a obtener desde los colores del sistema.
+
+MaterialImage^Imagen
+Get/Set a vdImageDef object(image) to be applied as material for this vdColor object.^Imagen a ser aplicada como material para este color.
+
+AlphaBlending^
+Get/Set the AlphaBlending value for the vdColor object.^
+MaterialMatrix^
+Get/Set a Matrix used for transformations for the material(image) of the vdColor object.^
+
+
+
+
+
+
+///////////////vdHatchProperties
+Solid2dTransparency^Transparencia
+Get/Set a value representing the transparency when the fillmode is solid and when the Document is rendered in wire2D.^Transparencia cuando el relleno es solido y el documento se renderiza en modelo de alambres (wire2d)
+
+DrawBoundary^Borde
+Get/Set a boolean value representing if the boundary of the hatch will be drawn.^Representa si el borde de la trama se dibuja.
+
+FillBkColor^Color
+Get/Set the fill color of the hatch..^Color de la trama.
+
+FillColor^Color fondo
+Get/Set the fill back color of the hatch.^Color de fondo de la trama.
+
+FillMode^Modo relleno
+Get/Set the fill mode of the object.^Modo de relleno de la trama.
+
+HatchBlock^Bloque
+Get/Set the hatch block used when fill mode is VdFillModeHatchBlock.^Bloque usado para la trama.
+
+HatchScale^Escala
+Get/Set the hatch scale of the object.^Escala de la trama.
+
+HatchAngle^Angulo
+Get/Set the hatch angle of the object.^Angulo de la trama.
+
+HatchImage^Imagen
+Get/Set the Hatch Image of the object when fillmode is VdFillModeImage.^Imagen de la trama.
+
+HatchPattern^Motivo
+Get/Set the hatch pattern when fillmode is VdFillModePattern.^Motivo utilizado en la trama.
+
+
+
+
+
+
+
+//////////////vdSectionClip
+Get/Set the name of the object.^Nombre objeto
+OriginPoint^Punto origen
+Get/Set the Origin point in Woorld Coordinate System(WCS).^Ubicar el punto origen en coordenadas universales (world coordinate system - WCS)
+Get/Set the direction vector of the vdSectionClip object.^Direccion del vector de seccion
+Get/Set a boolean value representing if the clip is enabled or not.^Valor logico que muestra si el corte esta habilitado o no.
+
+
+
+
+
+
+
+//////////////vdXProperty
+Get/Set the name of the vdXproperty object.^PropiedadesX. Nombre del objeto propiedades extendidas.
+PropValue^Valor Prop.
+Get/Set the Value of the vdXproperty object.^El valor de la propiedad extendida (propiedadX)
+TransformID^IdTransform
+Get/Set the type of the vdXproperty object.^Tipo de Propiedad extendida (propiedadX)
+
+
+
+
+
+
+
+////////////vdFileProperties
+DoublePrecision^Precision
+Get/Set the decimal Precision when saving in vdml format.Valid range 0 - 10.^Precision decimal cuando se guarda en formato vdml. El rango es de 0 a 10.
+
+DefaultDrawingCodePage^CodePage
+Get/Set the Default Code Page of the drawing.^Pagina de codigos por defecto para el dibujo.
+
+ExternalFileVersion^Version
+Get/Set a string representing the version of the Document's file.^Texto que representa la version del documento.
+
+ImagePreviewSize^Med.Vista Previa
+Get/Set the preview image size of the file.^Medida de la vista previa del archivo.
+
+SaveImagePreview^Vista P.
+Get/Set a boolean value representing if the preview image will be saved wwhen the file is saved or not.^Se guarda o no una vista previa cuando se salva el documento.
+
+Title^Titulo
+Get/Set a string representing a title for the Document's file.^Texto que representa el titulo del documento.
+
+Subject^Objeto
+Get/Set a string representing a subject for the Document's file.^Texto que muestra el objeto o resumen del documento.
+
+Author^Autor
+Get/Set a string representing the author for the Document's file.^Autor del documento.
+
+CreatedTime^Fecha creacion
+Get a DateTime object representing the date the file was created.^Fecha de creacion del documento.
+
+ModifiedTime^Fecha modif.
+Get a DateTime object representing the date the file was modified last time.^Fecha ultima modificacion.
+
+TotalEditingTime^Tiempo Edicion
+Get the total editing time of the file.^Tiempo total de edicion del documento.
+
+CustomProperties^Propiedades pers.
+Get an array of the Custom properties of the file.^Propiedades personalizadas.
+
+
+
+
+
+
+/////////////vdDocument
+PenCapsSquare^Fin recto
+Get/Set a static value which represents if the lines with width ends with square or round cap.^Un valor que representa si las lineas con espesor terminan rectas o redondeadas (True = Si = Final recto).
+
+///EnableAutoFocus^Autofoco
+Get/Set a boolean value representing if the mouse enters the control automatically will set the focus to the control.^Valor que representa si el mouse toma control automaticamente 
+EnableAutoFocus^-
+
+
+///DisableZoomOnResize^Zoom Ajuste
+Get/Set a boolean value which disables or enables zoom change when the control is resized.^Habilitacion/deshabilitacion del zoom cuando cambia la medida de la vista.
+DisableZoomOnResize^-
+
+
+
+///BackupOnSave^Copia Seg.
+Get/Set a boolean value representing if a backup file will be kept before saving an existing file.^Habilitar copia de seguridad antes de guardar el dibujo.
+BackupOnSave^-
+
+
+MouseWheelZoomScale^Z.Ruedita
+Get/Set the zooming scale used when zooming with the mouse wheel.Set this value under 1.0 to inverse the mouse wheel operation.^Escala de zoom a utilizar con la ruedita del mouse. Poner este valor menor a 1.0 para invertir la operacion de la ruedita.
+
+ImageSaveSize^Medida Imagen
+Get/Set the default image size (height pixels) when saving in a raster image(BMP,EMF etc...).^Medida por defecto de la imagen (altura pixels) cuando se guarda en formato raster (bmp, emf, etc..)
+
+GripBlock^Ver Grips
+Get/Set a value that controls the display of the grips of the vdInsert object.^Valor que controla si se ven o no los grips en las inserciones de bloques.
+
+GripSnap^Snap a Grip
+Get/Set a value representing if the mouse is locked in the center of the grip rectangle when the mouse pointer enters the grip rectangle.^Valor que represena si el mouse toma o no el snap a los grips.
+
+GlobalRenderProperties^Render Global
+Get the vdRenderGlobalProperties object of the document.^Propiedades globales de renderizado.
+//GlobalRenderProperties^-
+
+
+HandleCurrent^Ultimo id
+The last handle id used from the document.^Ultimo id de identificador utilizado en el documento.
+
+///DisableShowPrinterPaper^Ver Papel Imp.
+Get/Set if the default paper printer will be drawn at the active layout.^Activar/desactivar visualizacion del papel de la impresora.
+DisableShowPrinterPaper^-
+
+
+
+//IgnoreLockLayers^Bloquear Capas
+Get/Set a value representing if the lock layers are taken into consideration.^Valor que indica si se respetan los layers cerrados.
+IgnoreLockLayers^-
+
+
+DisableXrefToolTips^Tx.ayuda Xref
+Get/Set a boolean value representing if the objects that belong to external references of the document will show their tooltip.^Valor logico para acctivar/desactivar los textos de ayuda (tool tips text) de las referencias externas.
+//DisableXrefToolTips^-
+
+
+
+
+EnableToolTips^Tx.Ayuda
+Get/Set a value representing if the tooltips of the objects will be shown.^Activar/desactivar textos de ayuda (tool tips texts)
+
+EnableAutoGripOn^Pinzamientos (grips)
+Get/Set a value representing if the mouse click will show the grips of the entities.^Activa/desactiva puntos de pinzamientos (grips)
+
+EnableUrls^URL
+Get/Set a value representing if the URL of the objects will be opened.^Activa/desactiva el uso de direcciones URL (acceso web).
+
+Get/Set a value representing if the axis for all layouts or viewports will be drawn.^Activar/desactivar la visualizacion del icono de coordonadas.
+
+FileProperties^Propiedades
+Get the vdFileProperties object of the document.^Propiedades del archivo.
+
+FreezeModifyEvents^Eventos modif.frizados
+A stack to enable/disable using push,pop the OnAfterAddItem, OnAddItem, OnEraseObject, OnBeforeModifyObject, OnAfterModifyObject events.^Activar/desactivar en eventos de modificar (additem, erase, antes de modificar una entidad, luego de mod.una entidad)
+
+FreezeEntityDrawEvents^Eventos dib.modif.
+A stack to enable/disable using push,pop the OnDrawFigure, OnDrawAfterFigure, GetDimensionText, OnFigureDrawGrips, events.^Activar/desactivar en varios eventos de dibujar.                 
+
+ExternalReferences^Referencias ext.
+Get a collection of Documents containing all External References of the Document.^Ver documentos conteniendo referencias externas.
+
+osnapMode^Modo Osnap
+Get/set the active object snap modes.^Activar/Desactivar el modo Osnap (referencia a objetos)
+
+SupportPath^Ubicacion Soporte
+Get/Set the support path of the document.^Ubicacion del soporte para el documento.
+
+Get/Set the filename of the file opened to the document.^Nombre de archivo
+
+Angdir^Sentido Angulos
+Get/Set the setting for clockwise or counterclockwise angle direction.^Configurar el sentido de los angulos positivos. Horario (Clockwise) o anti horario (counter clockwise)
+
+AngBase^Angulos Unid.
+Returns and sets where the direction start angle is in radians.^Configurar cuando la direccion de arranque de los angulos es en radianes.
+
+lunits^Unidades lineales.
+Get/Set the linear units used to the document.^Configurar las unidades lineales.
+
+aunits^Unidades angulos
+Get/Set the angular units used to the document.^Configurar las unidades angulares.
+
+MirrorText^simetria Texto
+Controls how the CmdMirror command reflects text.^Controla cuando el comando mirror afecta los textos.
+
+LineTypes^Tipos de lineas
+Get the Linetypes collection of the document.^Coleccion de tipos de lineas
+
+Images^Imagenes
+Get the vdImages collection of the document.^Coleccion de imagenes del documento activo.
+
+Palette^Paleta colores
+Get the palette of the document.^Paleta de colores del documento.
+
+HatchPatterns^Tramas
+Get the collection of hatch patterns of the document.^Coleccion de modelos de tramados.
+
+Layers^Capas (Layers)
+Get the layers collection of the document.^Coleccion de capas del documento.
+
+TextStyles^Estilos de textos
+Get the textstyles collection of the document.^Coleccion de estilos de textos del documento.
+
+Blocks^Bloques
+Get the blocks collection of the document.^Coleccion de bloques del documento.
+
+DimStyles^Estilos de cotas
+Get the dimstyles collection of the document.^Coleccion de estilos de cotas del documento.
+
+LayOuts^Laminas (layouts)
+Get the layouts collection of the document.^Coleccion de laminas (layouts) del documento.
+
+Lights^Luces
+Get the lights collection of the document.^Coleccion de luces del documento.
+
+ActiveLineType^Tipo linea activa
+Get/Set the active linetype of the document.This linetype will be used in new added objects.^Tipo de linea activa en el documento. Se utilizara para todas las lineas que se dibujen.
+
+//ActiveLayer^Capa Activa
+ActiveLayer^-
+Get/Set the active layer of the document.^Capa (layer) activa en el documento.
+
+///ActiveDimStyle^Estilo cota activo
+Get/Set the active dimstyle of the document^Estilo activo de acotado.
+ActiveDimStyle^-
+
+
+
+ActiveTextStyle^Est.textos activo.
+Get/Set the active textstyle of the document.^Estilo de textos activo en el documento.
+
+ActivePenColor^Color Activo.
+Get/Set the active pen color of the document.^Color activo en el documento.
+
+
+
+
+///// Espesores  
+ActiveLineWeight^Esp.linea doc.
+Get/Set the active lineweight of the document.^Espesor de linea activo en el documento. Funciona si Ancho de Punta es cero. Si Ancho de Punta NO es cero se ignora. Espesor en mm * 100 = Valor de la lista.
+
+
+ActivePenWidth^Ancho de punta
+Get/Set the active penwidth of the document.^Ancho de punta activo en el documento, medido en unidades de dibujo. Si este valor NO es cero, el Esp.linea doc. se IGNORA.
+
+
+ActiveThickness^Altura 3D
+Get/Set the active thickness of the document.^Altura de dibujo (3D) activo del documento. Este valor se utiliza solo en dibujo en tres dimensiones.
+
+
+//este valor, Linewight viene de la parte de "figura" (vdFigure)
+LineWeight^Esp.linea objeto
+Get/Set The LineWeight of the object.^Espesor de linea del objeto seleccionado.
+////// Espesores
+
+
+
+ActiveHatchProperties^Tramas activas
+Get/Set the active hatch properties of the document.^Propiedades activas de tramas
+
+PointStyleMode^Estilo de punto
+Get/Set the point style mode of the document.^Estilo de puntos activo
+
+PointStyleSize^Medida de punto
+Get/Set the point style size of the document.^Medida del estilo de punto para el documento.
+
+Get/Set the active linetype scale of the document.^Escala de tipo de linea activa del documento.
+
+ActiveTextHorJustify^Justif.Horiz.Texto
+Get/Set the active text horizontal justification of the document.^Justificacion horizontal activa para textos en el documento.
+
+ActiveTextVerJustify^Justif.Vert.texto
+Get/Set the active text vertical justification of the document.^Justificacion vertical activa para textos en el documento.
+
+Get/Set the line weight value of the document.This value is used when an object has LW_DOCUMENTDEFAULT as lineweight.^Espesor de linea del documento. Se usa si 'Esp.linea Doc' (espesor por defecto del dibujo) = LW_DOCUMENTDEFAULT.
+
+LineWeightDisplay^Ver Espesor
+Get/Set a boolean value representing if the line weights of the objects will be displayed or not.^Indica si se visualiza o no el espesor asignado.
+
+Model^Modelo
+Get the model of the document.^Model del documento
+
+ActiveLayOut^Espacio activo
+Get/Set the active layout(model or a layout) of the document.^Activar espacio modelo/papel del documento.
+
+ToolTipDispProps^Prop.Textos de ayuda
+Get the ToolTip window dispaly properties.^Propiedades de textos de ayuda (tool tips texts).
+
+PolarTrackDispProps^Prop.Polar tracking
+Get the PolarTrack tooltip window display properties.^Propiedades de tracking polar.
+
+Get/Set the render mode of the active viewport(if exist) or the active layout(model or a layout) of the document.^Modo de render de la ventana activa (si existe) o de la lamina activa (modelo o papel).
+
+Get/Set the viewsize of the active viewport(if exist) or the active layout(model or a layout) of the document.^Medida de vista de la ventana activa (si existe) o de la lamina activa (modelo o papel).
+
+Get/Set the coordinates of the center point of active viewport(if exist) or the active layout(model or a layout) in Display Coordinate System.^Coord.del centro de la ventana activa (si existe) o de la lam.activa (modelo o papel).
+
+BasePoint^Punto base
+Get/Set the base point of the document.It is used when you insert a drawing in a document as a block.^Punto base del documento. Se utiliza cuando se inserta este dibujo en otro como bloque.
+
+Get/Set lhe lens angle in degrees of the active viewport(if exist) or the active layout(model or a layout).^Angulo de la lente en grados de la ventana activa (si existe) o de la lamina activa (modelo o papel).
+
+Get/Set the focal length of the active viewport(if exist) or the active layout(model or a layout).^Distancia focal de la lente de la ventana activa (si existe) o de la lamina activa (modelo o papel).
+
+Get/Set the perspective mode of the active viewport(if exist) or the active layout(model or a layout).^Modo de perspectiva de la ventana activa (si existe) o de la lamina activa (modelo o papel).
+
+Get/Set the lower-left and upper-right limits of the ActionLayout used for grid displaying.^Esquinas inferior izquierda y superior derecha para mostrar la grilla.
+
+Get/Set the orthomode property of the document.If true Constrains cursor movement to the perpendicular.^Modo ortogonal.
+
+Enable/disable the polar trach behaviour of the document.Also PolarTrackAngle must be specified.^Habilitar/deshabilitar el polar tracking. Tambien se puede especificar el angulo del polar tracking.
+
+Get/Set the polar track angle of the document in radians.^Angulo del polar tracking en radianes.
+
+Get/Set the distance (dx) of the dots of the grid in drawing units.^Distancia de separacion, en el eje x, de los puntos de la grilla, en unidades de dibujo.
+
+Get/Set the distance (dy) of the dots of the grid in drawing units.^Ddistancia de separacion, en el eje y, de los puntos de la grilla, en unidades de dibujo.
+
+Get/Set a boolean value that specifies if the grid is drawn or not.^Visibilidad de la grilla.
+
+Get/Set the Snap style(isometric or stadard).^Estilo del snap. Estandar o isometrico.
+
+Get/Set the Isometric snap (left,right,top).^Snap isometrico (izquierdo, derecho, arriba)
+
+Get/Set a value that enables/disables the cursor to move only over the grid dots.^Trabar snap a puntos de grilla.
+
+Get/Set the snap distance (dx).^Distancia del snap, en el eje x, en unidades de dibujo.
+
+Get/Set the snap distance (dy).^Distancia del snap, en el eje y, en unidades de dibujo.
+
+Get/Set the snap and grid angle in radians.Default value 0.0.^Angulo de la grilla y el snap, en radianes. Valor por defecto = 0.0
+
+Get/Set the snap and grid base point in Woorld Coordinate System(WCS).^Punto base de grilla y snap en coordenadas universales (world coordinate system - WCS)
+
+
+
+
+
+
+
+
+
+///////////////////vdPalette
+Forground^Color frente
+Get/Set the Foreground color which is the color with index 6 as system color.^Color de frente el cual es el color con el indice 6 como color de sistema.
+
+Background^Color fondo
+Get/Set the color used for background.^Color utilizado para el fondo.
+
+
+
+
+
+
+
+///////////////////vdRenderGlobalProperties
+Get/Set the curve resolution of the render object.^Resolucion de curvas para renderizado.
+
+CursorAxisColor^Color mouse
+Get/Set the color used for the draw of the mouse crosshair.^Color utilizado para el cursor del mouse.
+
+CursorPickColor^Color Mira cursor
+Get/Set the color used to draw the mouse rectangle.^Color del rectangulo de la mira central del cursor.
+
+ReferenceCrossColor^Color mouse referen.
+Get/Set The color used for the reference mouse crosshair.^Color del mouse, de referencia.
+
+RubberBandColor^Color banda elastica
+Get/Set the color of the rubber line in mouse actions.^Color para la linea elastica en las acciones del mouse.
+
+GripColor^Color Grips
+Get/Set the grip color of the render.^Color de los puntos de pinzamientos (grips).
+
+OsnapColor^Color Osnap
+Get/Set the osnap color of the render.^Color de Osnap
+
+GripSize^Medida Grips
+Get/Set the grip size in pixels used in render.^Medida de los puntos de pinzamientos (grips) en pixels utilizado en renderizado.
+
+OsnapSize^Medida Osnap
+Get/Set the osnap size in pixels used in render.^Medida del osnap en pixels utilizado en renderizado
+
+PickSize^Mira Cursor Tam.
+Get/Set the mouse rectangle size in pixels.^Medida del la mira del cursor en pixels.
+
+AxisSize^Medida cursor
+Get/Set the mouse crosshair size in pixels.^Medida del cursor en pixels.
+
+CrossSize^Ejes
+Get/Set the reference mouse crosshair in pixels.^Long. de los ejes en pixels
+
+ShowCursor^Ver Cursor
+Get/Set a boolean value representing if the mouse crosshair is visible or not.^Valor logico que representa si se ve o no el cursor. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////ToolTipDisplayProps
+FontStyle^Tipografia
+
+Get/Set the font style used to draw the text inside the tooltip window.^Leer/Escribir tipogr.textos dentro de los textos de ayudas.
+
+Get/Set the color used to draw the text inside the tooltip window^Leer/Escribir color para los textos de ayudas.
+
+BkColor^Color de fondo
+
+Get/Set the color used to fill the background of the tooltip window.^Leer/Escribir el color de fondo de los textos de ayudas.
+
+FrameColor^Color del marco
+
+Get/Set the color used to draw a frame rectangle of the tooltip window.^Leer/Escribir color del rectangulo de los textos de ayudas.
+
+
+
+
+
+
+
+
+
+
+
+/////////////////vdCurves
+Operation^Operacion
+Get/Set the Clipping type for the vdCurves object.^Leer/Escribir el tipo de ajuste para las curvas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////AUnits
+Precision^Precision
+Represents the decimal precision for angular units.^Precision decimal para unidades angulares.
+UType^Tipo Unid.ang.
+Represents the angular units type.^Tipo de unidades angulares.
+ZerosSuppression^Supresion de ceros.
+Represents the zerro suppression type for angular units.^Supresion de ceros para unidades angulares.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////LUnits
+Represents the decimal precision.^Precisión decimal.
+Represents the linear units type.^Unidades lineales.
+Represents the zeros suppression type.^Supresion de ceros.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////Categories
+Units^Unidades
+View^Vista
+Globals^Global
+Grid^Grilla
+ActiveProperties^Propiedades Activas
+Hatching^Tramado
+Collections^Colecciones
+Geometry^Geometria
+Text^Texto
+Array^Matriz
+Misc^Varios
+
+
+
+
+
+
+
+
+///////////////////CommandAction Messages
+First Point:^Primer punto:
+Next Point [Undo,Close]:^Punto Siguiente [U=Deshacer, C=Cerrar]
+Undo;U;u^U=Deshacer
+Close;C;c^
+Next Point:^Punto Siguiente:
+Next Point [Undo]:^Punto Siguiente [U=Deshacer]:
+Center Point or [3p]:^Punto Central o [3p]
+3p;3P^
+Second Point:^Segundo Punto:
+Third Point:^Tercer punto:
+Radius:^Radio:
+StartAngle:^Angulo Inicial:
+EndAngle:^Angulo Final:
+Base Point:^Punto Base:
+Rotation:^Rotacion:
+From Point:^Desde el punto:
+To Point:^Hasta el punto:
+Scale Factor:^Factor de escala:
+Select entities:^Seleccionar entidades:
+Origin Point:^Punto Origen
+Block Name:^Nombre de Bloque:
+Scale Factor X:^Factor escala X:
+Scale Factor Y:^Factor escala Y:
+Rotation Angle:^Angulo de rotación:
+Insertion Point:^Punto de inserción:
+Text:^Texto:
+Select a Circle or Arc:^Seleccionar Circulo o Arco:
+Angle Vertex:^Vertice del angulo:
+First Angle Endpoint:^Primer punto final de Angulo:
+Second Angle Endpoint:^Segundo punto final de angulo: 
+Position:^Posición:
+Point:^Punto:
+Watching angle on XY plane relative to X axis:^Angulo del observador en el plano xy relativo al eje x:
+Vertical watching angle relative to XY plane(from -90 to +90):^Angulo vertical del observador relativo al plano xy(desde -90 a +90):
+Origin point:^Punto origen:
+Point on positive portion of the X-axis:^Punto de la parte positiva del eje X:
+Point on positive-Y portion of the UCS XY plane:^Punto de la parte positiva del eje Y del plano UCS
+Rotation Axis [X,Y,Z,2P]^Eje de rotación:
+X;x^
+Y;y^
+Z;z^
+2p;2P^
+Axis First Point:^Primer punto del eje:
+Axis Second Point^Segundo punto del eje:
+First Point Of Mirror Line:^Primer punto del eje de simetria:
+Second Point Of Mirror Line:^Segundo punto del eje de simetria:
+keep Source Objects ? Yes/No^Mantener los objetos originales? (Enter=si,N=no)
+Yes;Y;y^Y=Si
+No;N;n^
+Number Of Rows:^Número de filas:
+Number Of Columns:^Número de columnas:
+Distance Between Rows:^Distancia entre filas:
+Distance Between Columns:^Distancia entre columnas:
+Center Of The Array:^Centro de la matriz:
+Number Of Items In The Array:^Número de items en la matriz:
+Angle To Fill (+=ccw, -=cw):^Angulo a recorrer (+=antihorario, -=horario):
+Rotate Objects [Yes/No] <Y>:^Rotar objetos (Y=Si/N=No)
+Length:^Longitud:
+Width:^Ancho:
+Height:^Alto:
+M Size >=2:^Medida M >=2:
+N Size >=2:^Medida N >=2:
+Point^Punto
+Polyline To Mesh:^Polilinea a malla:
+Thickness:^Espesor:
+Keep Bottom and Top Edges Invisible [Yes,No] <Y>:^Ocultar lado superior e inferior (Y=Si/N=No)
+Point1:^Punto 1
+Center Point:^Punto central:
+First Axis End Point:^Punto final primer eje:
+Second Axis Distance:^Distancia segundo eje:
+Select Entity:^Seleccionar entidad:
+Camera position:^Posición de la cámara:
+Target position:^Posición destino:
+Select Distance:^Seleccionar distancia:
+Select Side to Offset:^Seleccionar lado de Offset:
+Specify Start Point:^Indicar punto inicio:
+Specify Next Point or [Arc,Close,Undo]:^Indicar punto siguiente o [Arc=Arco,Cerrar,U]:
+Arc;A;a^Arc;A;a
+Specify Second Point of Arc or [Angle,CEnter,Close,Line,Radius,Second pt,Undo]:^Segundo punto del arco o [A=angulo,CE=centro,C=cerrar,L=line,R=radio,S=seg pt, U=deshacer]
+Angle;A;a^Angle;A;a
+CEnter;CE;ce^CEntro;CE,ce
+Line;L;l^Linea;L;l
+Radius;R;r^Radio;R;r
+Specify End Point of Arc:^Indicar punto final del arco:
+Specify Included Angle of Arc:^Indicar angulo del arco:
+Specify End Point of Arc or [CEnter,Radius]:^Indicar punto final del arco o [CE=centro,R=radio]
+Specify center point of arc:^Indicar punto central del arco:, 
+Specify radius of arc:^Indicar radio del arco:
+Specify endpoint of arc or [Angle]:^Indicar punto final del arco o [Angulo]:
+Specify direction of chord for arc:^Indicar dirección arco:
+Select Entity to Extend:^Seleccionar entidad a extender:
+Select vdCurve to Trim:^Seleccionar curva a recortar:
+Select First Entity:^Seleccionar primer entidad:
+Select Second Entity:^Seleccionar segunda entidad:
+Window Select 1st Point:^Primer punto de la ventana:
+Window Select 2nd Point:^Segundo punto de la ventana:
+Strech From Point:^Cambiar desde punto:
+Strech To Point:^Cambiar al punto:
+Select vdInsert Entity:^Seleccionar Entidad Insertar:
+Base Radius:^Radio base:
+Top Radius:^Radio arriba:
+Number Of Segments:^Número de segmentos:
+CenterPoint or [2p,3p]: ^Punto central o [2p, 3p]:
+Pick Window Points:^Seleccinonar puntos de la ventana:
+2p;2^
+3p;3^
+Point 1:^Punto 1:
+Point 2:^Punto 2:
+Point 3:^Punto 3:
+Select Zoom Type [Extends,All,Scale,Previous,Window]<Extends>:^Tipo de zoom [E=Extension/A=todo/S=escala/P=Previo/W=Venana]<Extension>
+E;e^
+A;a^
+S;s^
+P;p^
+W;w^
+Scale:^Escala:
+First corner:^Primer esquina:
+Other corner:^Otra esquina:
+Command:^Comando:
+Layout Name:^Nombre Layout(Lamina):
+Select Reference Entity:^Seleccionar entidad de referencia:
+Select First Point:^Seleccionar primer punto:
+Select Second Point:^Seleccionar segundo punto:
+Pick From Point:^Seleccionar punto desde
+need .x^Falta .x
+need .y^Falta .y
+need .z^Falta .z
+need .xy^Falta .xy
+need .xz^Falta .xz
+need .yz^Falta .yz
+Specify Width:^Especificar ancho:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////MessageBox messages
+Dimension Style Name Must Be Unique^El nombre del estilo de cotas debe ser único
+Please Choose a name for the Xproperty^Indicar nombre de Xproperty
+An Error Occured while parsing XProperty Value^Ocurrio un error con la Xproperty
+Please insert a number^Insertar un numero
+Layer Name Already Exists^Ya existe ese nombre de layer
+Name Already Exists^Nombre existente
+Please Type a name for the Light^Ingrese un nombre para la luz
+Cannot Delete Default Light^No se puede borrar la luz por defecto
+Light Does Not Exist^Luz inexistente
+Please Select a Light^Seleccionar una luz
+Invalid Point Size Value!!!^Valor de medida de punto invalido!!!
+Negative Point Size Value!!!^Valor de punto negativo!!!
+Please Select Xproperty to Edit^Seleccionar Xproperty para editar
+Please Select Xproperty to Remove^Seleccionar Xproperty para borrar
+Text Style Name Must Be Unique^El nombre del estilo de texto debe ser único
+Cannot Detach External Reference^No se puede desvincular referencia externa
+Cannot Reload External Reference^No se puede recargar referencia externa
+Cannot Bind External Reference^No se puede vincular referencia externa
+The entity you selected is not an attribute block^La entidad seleccionada no es un bloque con atributos
+Cannot Delete Model Layout^No se puede borrar el layout Model
+Cannot Delete Layout.It has dependencies!!!^No se puede borrar el layout (lamina). Tiene dependencias!!!
+Cannot Add Viewport in Model^No se puede agregar un viewport (ventana) en el espacio modelo
+Save Changes?^Guardar los cambios?
+Please Add image to the Image collection of the Document^Agregar imagen a la coleccion de imagenes del documento
+Distance^Distancia
+Image is being used and cannot be deleted.^Imagen en uso no puede borrarse
+////////////////////////////////////////////////////VectorDraw Forms
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////General collection editor
+CollectionEditor^Editor de colecciones
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////Color dialog
+Curent Color^Col.activo
+
+Gray shades^Escala grises
+
+Standard Colors^Colores estandar
+
+By Block^x Bloque
+
+By Layer^x Layer
+
+Palete^Paleta
+
+Selected Color^color selec.
+
+Luminance^Luminosidad
+
+Saturation^Saturacion
+
+Hue^
+
+BackGround^fondo
+
+Index Color^Indice de color
+
+True Color^C.verdadero
+
+OK^Si
+
+Cancel^Cancelar
+
+Foreground^Adelante
+
+
+
+
+
+
+
+
+
+
+//version 6007
+GridColor^
+Get/Set the color used to draw the grid.^
+SelectingWindowColor^
+Get/Set Solid Transparency color for window selecting.^
+SelectingCrossColor^
+Get/Set Solid Transparency color for crossing window selecting.^
+TimerBreakForDraw^
+Get/Set minimum time elapsed for breaking the draw in milliseconds.^
+
+//Version 6008
+//Renaming Layer Form
+New Layer Name^
+New Name:^
+InsUnits^
+Get/Set a value used for scaling when inserting blocks from a drawing.^
+Save to PDF^
+Printer Name:^
+Paper Size:^
+Print^
+ToolTipText^
+Error Exporting PDF file.^
+PickAdd^
+Get/Set a boolean value representing whether a user  selection action replace the current selection set or add to it.^
+
+//Version 6009
+Error Exporting to file.^
+Save to file^
+gradientType^
+Get/Set the gradient fill type.^
+gradientColor2^
+Get/Set the gradient ending color.^
+gradientAngle^
+Get/Set the gradient direction angle in radius.^
+
+//Version 6010
+DiameterSymbol^
+Specifies a text prefix symbol for a diameter dimension.^
+RadialSymbol^
+Specifies a text prefix symbol for a radial dimension.^
+
+//Version 6011
+///LockLayerMethod^
+Get/Set a value representing how entities in Lock layers are used in methods.^
+LockLayerMethod^-
+
+
+LockTriangles^
+Enable/Disable the recalculation of triangulation after the Update method.^
+PolarTrackLock^
+Get/Set the polar track lock property .If true constrains cursor movement only to the PolarTrackAngle direction.^
+ToolTipAligment^
+Specifies the alignment of a text string relative to its layout rectangle.^
+OsnapModePreserve^
+Get/set a boolean value that represents the behaviour of the osnapmode.^
+
+//Version 6011
+BkGradientColor^
+Get/Set the second color for gradient fading effect of the background.^
+BkGradientAngle^
+Get/Set the background gradient direction angle.^
+SectionClipCoverFaces^
+Enable / Disable the draw of PolyFace Cover Faces for each Section Clip.^
+
+//Version 6012 new dictionary resources
+
+Select vdPolyface object:^Seleccionar objeto policara:
+Direction:^Direccion
+Cover Faces [Yes/No] <Y>:^Cubrir caras [Si=Y/No=N]
+
+
+
+
+
+//=========LineTypeSegment properties=================
+Get/Set the type of the Segment.^Tipo de segmento.
+
+DashLen^Largo trazo
+Get/Set the legth of the segment when flag is DOT.^Largo del trazo cuando el tipo de linea es dot.
+
+ShapeOffsetX^Copia de texto x
+Get/Set the segment's text shape offset at the x direction when flag is TTF or SHX text.^Copia del texto del segmento en la direccion x para textos tipo TTF o SHX.
+
+ShapeOffsetY^Copia de texto y
+Get/Set the segment's text shape offset at the y direction when flag is TTF or SHX text.^Copia del texto del segmento en la direccion y para textos tipo TTF o SHX.
+
+ShapeScale^Escala
+Get/Set the scale of the segment when flag is TTF or SHX text.^Escala de los segmentos para textos TTF o SHX.
+
+ShapeRotation^Rotacion
+Get/Set the rotation in radians of the segment's text shape when flag is TTF or SHX text.^Rotacion en radianes de los segmentos de textos para textos tipo TTF o SHX.
+
+Shapenumber^Numero
+A number that represents the character number used for flag SHX text.^Un numero que representa los caracteres usados para textos TTF o SHX.
+
+ShapeText^Texto
+A string that represents the text used in the linetype when flag is TTF text.^Cadena de caracteres que representa el texto usado en tipos de lineas para textos TTF o SHX.
+
+ShapeStyleName^Nombre Estilo
+Get the name of the vdTextstyle used if the linetype uses texts.^Nombre del estilo de texto utilizado si el tipo de linea usa textos.
+
+
+
+
+
+
+//=========grPatternLine properties=================
+Angle^Angulo
+Get/Set the angle of the pattern in radians.^Angulo del patron de tramado en radianes.
+
+Get/Set the origin (start point) of the pattern.^Punto origen del tramado (punto de inicio).
+
+Offset^Duplicado
+Get/Set the offset point of the pattern that influences the distance between the pattern lines.^Punto de duplicado del patron de tramado para la distancia entre lineas patron de tramas.
+
+Dashes^Trazos
+Get/Set a collection of doubles that represents the pattern line display.^Coleccion que representa el modelo o patron de linea.
+
+
+
+
+
+
+
+//==========Layers Dialog==============================
+Status^Estado
+Freeze^Congelado
+Color^Color
+Linetype^T.Linea
+
+
+
+
+

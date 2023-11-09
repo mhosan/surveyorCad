@@ -1,0 +1,764 @@
+﻿Quiero ser capaz de buscar eficazmente una matriz para el contenido de una cadena.
+Ejemplo:
+
+dim arr() as string={"ravi","Kumar","Ravi","Ramesh"}
+Me pase el valor es "ra" y quiero que regrese el índice de 2 y 3.
+
+¿Cómo puedo hacer esto en VB?
+
+répondre #1
+Está claro no exactamente cómo desea buscar en la matriz. Aquí están algunas alternativas:
+
+Buscar todos los elementos que contiene la cadena exacta "Ra" (devuelve los artículos 2 y 3):
+
+Dim result As String() = Array.FindAll(arr, Function(s) s.Contains("Ra"))
+Buscar todos los elementos, comenzando con la cadena exacta "Ra" (devuelve los artículos 2 y 3):
+
+Dim result As String() = Array.FindAll(arr, Function(s) s.StartsWith("Ra"))
+Buscar todos los elementos que contiene cualquier caso versión de «ra» (artículos devuelve 0, 2 y 3):
+
+Dim result As String() = Array.FindAll(arr, Function(s) s.ToLower().Contains("ra"))
+Buscar todos los elementos, comenzando con cualquier versión de caso de «ra» (artículos devuelve 0, 2 y 3):
+
+Dim result As String() = Array.FindAll(arr, Function(s) s.ToLower().StartsWith("ra"))
+-
+
+Si no está utilizando VB 9++ no tiene funciones anónimas, así que tienes que crear una función con nombre.
+
+Ejemplo:
+
+Function ContainsRa(s As String) As Boolean
+   Return s.Contains("Ra")
+End Function
+Uso:
+
+Dim result As String() = Array.FindAll(arr, ContainsRa)
+Tener una función que sólo se puede comparar a una cadena específica no siempre muy útil, por lo que poder especificar una cadena a comparar a usted tendría que ponerlo en una clase para tener un lugar para almacenar la cadena:
+
+Public Class ArrayComparer
+
+   Private _compareTo As String
+
+   Public Sub New(compareTo As String)
+      _compareTo = compareTo
+   End Sub
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
+' Except for EMF, the same can be done with PDF, BMP, JPG, SVG, HPG (HPGL)
+' From version 6010 and above the printer can be used in order to export an area or the whole drawing
+'in a raster format (BMP, JPG), PDF, SVG, or HGPL
+
+#Region "create simple drawing"
+'create a simple drawing
+vdFC.BaseControl.ActiveDocument.[New]()
+vdFC.BaseControl.ActiveDocument.CommandAction.CmdBox3d(New VectorDraw.Geometry.gPoint(10, 10), 10, 12, 14, 10)
+vdFC.BaseControl.ActiveDocument.CommandAction.CmdCircle(New VectorDraw.Geometry.gPoint(3, 3), 5)
+#End Region
+
+
+-------------------------------------------------------
+#Region "save as EMF the Extends using fixed EMF width"
+-------------------------------------------------------
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.PrinterName = "c:\test_extends.emf"
+
+' or PDF bmp jpg svg
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.Resolution = 96
+'Screen DPI
+
+Dim Extends As VectorDraw.Geometry.Box = vdFC.BaseControl.ActiveDocument.ActiveLayOut.Entities.GetBoundingBox(True, True)
+
+Dim EMFwidth As Integer = 500
+'fixed width
+
+Dim EMFheight As Integer = CInt((EMFwidth * Extends.Height / Extends.Width))
+' keep propotions
+
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.paperSize = New Rectangle(0, 0, CInt((EMFwidth * 100 / vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.Resolution)), CInt((EMFheight * 100 / vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.Resolution)))
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.PrintExtents()
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.PrintScaleToFit()
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.PrintOut()
+#End Region
+
+
+-------------------------------------------------------
+#Region "save as EMF the screen using fixed EMF height"
+-------------------------------------------------------
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.PrinterName = "c:\test_screen.emf"
+' or PDF bmp jpg svg
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.Resolution = 96
+'Screen DPI
+Dim screen_Box As New VectorDraw.Geometry.Box()
+Dim screen_width As Double = vdFC.BaseControl.ActiveDocument.ActiveLayOut.PixelSize * vdFC.BaseControl.Width
+Dim screen_height As Double = vdFC.BaseControl.ActiveDocument.ActiveLayOut.ViewSize
+screen_Box.AddPoint(vdFC.BaseControl.ActiveDocument.ActiveLayOut.ViewCenter - New VectorDraw.Geometry.gPoint(screen_width / 2, screen_height / 2))
+screen_Box.AddPoint(vdFC.BaseControl.ActiveDocument.ActiveLayOut.ViewCenter + New VectorDraw.Geometry.gPoint(screen_width / 2, screen_height / 2))
+EMFheight = 500
+' this is fixed
+EMFwidth = CInt((EMFheight * screen_width / screen_height))
+'keeping the propotion
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.paperSize = New Rectangle(0, 0, CInt((EMFwidth * 100 / vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.Resolution)), CInt((EMFheight * 100 / vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.Resolution)))
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.PrintWindow = screen_Box
+' Here the code can be changed so
+' the user can select a rectangle in screen and this area is saved to file.
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.PrintScaleToFit()
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.PrintOut()
+#End Region
+
+
+--------------------------------------------------------------------------------------
+#Region "call the PrintPreview in order the user to select the area to export
+--------------------------------------------------------------------------------------
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.PrinterName = "*.emf"
+' Using *.emf or *.pdf etc the print dialog will prompt a dialog to input the file name
+
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.Resolution = 96
+'Screen DPI
+
+EMFwidth = 500
+'fixed width
+
+EMFheight = 500
+' and height
+
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.paperSize = New Rectangle(0, 0, CInt((EMFwidth * 100 / vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.Resolution)), CInt((EMFheight * 100 / vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.Resolution)))
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.PrintExtents()
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.PrintScaleToFit()
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.InitializePreviewFormProperties(True, True, False, False)
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.CenterDrawingToPaper()
+vdFC.BaseControl.ActiveDocument.ActiveLayOut.Printer.DialogPreview()
+#End Region
+End Sub
+
+
+
+
+
+
+
+
+
+
+In Version 6006 PDF 1.4 export was added as functionality to the vdDocument's SaveAs Method.
+In order to use this functionality you can either use the SaveAs function with ".pdf"
+extension to the filename or ExportToFile function with the same extension.
+
+By Default the ActiveLayout is saved using the extends of the drawing and in Landscape
+or Portrait depending which orientation is fitting better the drawing.
+
+Also the TTF Texts are rendered as Filled Shapes and SHX as simple lines and cannot be edited
+or selected.
+
+The Above default behaviour can be changed with a newly added property named
+PDFExportPropertiesFlags to the FileProperties property of 
+VectorDraw.Proffesional.vdObjects.vdDocument object. 
+
+This property has the following values:
+
+-DrawOutlineText:This is the default value and is described above.
+
+-UsePrinterPropertiesWith_OutlineText: This value will create the texts as described above
+but will use the ActiveLayout's printer properties to select the PrintingWindow,PrintingScale,
+PaperSize,Margins, Orientation for output.
+
+-DrawTextAsSelected: Using this value the extends of the ActiveLayout will be saved and the
+texts will be added as PDF text and can be editable and selected.This value should be used
+only if the drawing contains texts that use characters up to 127(english/latin characters).
+If the drawing contains any other characters (chinese) this value shouldn't be used. 
+PDF size will be smaller if such texts exist.
+
+-UsePrinterWithTextAsSelected:Using this value the texts will be saved as described above but
+the printer's properties will be used for the output. PDF size will be bigger if a lot of 
+texts exist in the drawing.
+
+-DoublePrecision of FileProperties : Using a value like 2 or 3 (default is 8) leeds to smaller
+PDF size.
+
+When using the Printer's properties you should first be sure that a printer is selected
+and all properties of the printer are as desired because in other case the output will 
+not be as expected.
+
+In addition You can use the TextStyle's DrawOutLine property for texts that are over 127. 
+For example you can use the DrawTextAsSelected property for texts that are over 127 character
+(chinese) use a textstyle with DrawOutLine property True. This way the latin characters will
+be saved as text and will be edited and selected at the PDF and other characters will be saved
+as solid polygons.
+
+You can Test the PDF output in VectorCad by opening a drawing and choose SaveAs.Before saving
+the drawing change the value of the PDFExportPropertiesFlags property located at the 
+Document's Fileproperties property. You can also change the printer's properties(Select 
+portion of the drawing (Pick window) using the Printdialog and also change the Margins and 
+orientation and then use the SaveAs function and select PDF.
+
+For user's that use .NET components like vdFramedControl you can simply modify the above 
+properties as described below:
+
+vdFramedControl1.BaseControl.ActiveDocument.FileProperties.PDFExportProperties = 
+VectorDraw.Professional.vdObjects.vdFileProperties.PDFExportPropertiesFlags.DrawTextAsSelected;
+
+vdFramedControl1.BaseControl.ActiveDocument.SaveAs("c:\\Temp\\saved.pdf");
+
+For user's that work with the wrapper component is a bit more complicated to use the 
+above property.Please check the code below written in vb6:
+You should add a reference to the project at the VectorDraw.Proffesional.tlb in order to get the VectorDraw_Professional.vdDocument wrapper object.
+Dim doc As VectorDraw_Professional.vdDocument
+Set doc = VDraw1.ActiveDocument.WrapperObject
+doc.FileProperties.PDFExportProperties = PDFExportPropertiesFlags_DrawOutlineText
+VDraw1.ActiveDocument.SaveAs "c:\\temp\\.saved.pdf", DefaultVersion
+
+Images exported in PDF in low resolution
+Solution
+
+Fixed in 6020
+PDF export is using the selected printer Resolution property.
+
+example:
+
+doc.FileProperties.PDFExportProperties = vdFileProperties.PDFExportPropertiesFlags.UsePrinterPropertiesWithOutlineText;
+
+
+doc.ActiveLayOut.Printer.Resolution = 600;
+doc.SaveAs("test.pdf");
+		
+		
+		
+		
+		'---------------------------------------------------------------------------------------------------------------------------------
+		' donde se guarda la configuracion de la aplicacion (la configuracion referenciada en "Proyectos/Propiedades mhCad/Configuracion"
+		'---------------------------------------------------------------------------------------------------------------------------------
+		En windows 7:
+		c:\users\cuenta del usuario\AppData\Local\nombre del usuario o nombre de la compania o nombre del ejecutable\ejecutable.exe_Url_codigo\carpeta numerica\user.config
+
+
+
+		
+		'------------------------------------------------------------------------------------------------
+        ' para el help
+        '------------------------------------------------------------------------------------------------
+        'Para asignar la ayuda a un control se utiliza el método SetHelpNavigator
+        'se le pasaran dos parametros el objeto que queremos asociar y el comportamiento
+        'que tendra en nuestro archivo de ayuda.
+        'Ejemplo 1: Presionando el F1 saldra la ayuda por la pestaña de tabla de contenidos
+        '-->HelpProvider1.SetHelpNavigator(Me, HelpNavigator.TableOfContents)
+        'Ejemplo 2: Presionando el F1 saldra la ayuda en el index
+        '-->HelpProvider1.SetHelpNavigator(Me, HelpNavigator.Index)
+
+        'Para quitar la cadena de ayuda a un control se utiliza ResetShowHelp. 
+        '-->HelpProvider1.ResetShowHelp(ControlDesasociar)
+
+        'Para especificar si se mostrará la ayuda en un control, o no, se utiliza el método
+        'SetShowHelp, al cual se le pasan dos parámetro el control y un true o false.
+        '-->HelpProvider1.SetShowHelp(Button1, False)
+
+        'Para asignar una palabra clave a un control se utiliza el método SetHelpKeyword.
+        'Un(ejemplo)
+        '-->HelpProvider1.SetHelpKeyword(Me, "formulario")
+        '-->HelpProvider1.SetHelpNavigator(Me, HelpNavigator.KeywordIndex)
+        'Cuando se presiona el F1 la ayuda muestra el help como si se hubiera ingresado
+        'la palabra "formulario" en la solapa de buscar del help.
+
+        'Tanto como se encuentran estos métodos de asignación se encuentran las que 
+        'recuperan todos estos valores, pero en vez de empezar por set, empezaran por get
+
+        'poner un string para un control:
+        'HelpProvider1.SetHelpString(Button2, "I am supported by HelpProvider1")
+
+
+        'ejecutar el subprg "configuracionRegional" del modulo "modConfReg" para leer el separador
+        'decimal. Se guarda en "sepDecimal" (str)
+
+
+
+
+
+
+
+
+Conceptos del lenguaje Visual Basic
+Manipulación de cadenas
+La clase String de .NET Framework proporciona muchos métodos integrados para facilitar la comparación y manipulación de cadenas. Ahora resulta sencillo obtener datos acerca de una cadena, o crear nuevas cadenas mediante la manipulación de las cadenas actuales. El lenguaje Visual Basic .NET también tiene métodos inherentes que duplican muchas de estas funcionalidades.
+
+Tipos de métodos de manipulación de cadenas
+En esta sección se describen diferentes formas de analizar y manipular cadenas. Algunos métodos son parte del lenguaje Visual Basic, mientras que otros son inherentes a la clase String.
+
+Los métodos de Visual Basic .NET se utilizan como funciones inherentes al lenguaje. Pueden utilizarse sin calificación en el código. En el siguiente ejemplo se muestra el uso habitual de un comando de manipulación de cadenas de Visual Basic .NET:
+
+CopiarDim aString As String = "SomeString"
+Dim bString As String
+bString = Mid(aString, 3, 3)
+En este ejemplo, la función Mid realiza una operación directa en aString y asigna el valor a bString.
+
+También puede manipular cadenas con los métodos de la clase String. Existen dos tipos de métodos en String: métodos compartidos y métodos de instancia. 
+
+Un método compartido es un método que se deriva de la propia clase String y no necesita una instancia de dicha clase para funcionar. Estos métodos se pueden calificar con el nombre de la clase (String) en vez de con una instancia de dicha clase. Por ejemplo:
+
+CopiarDim aString As String
+bString = String.Copy("A literal string")
+En el ejemplo anterior, el método String.Copy es un método estático, que actúa sobre una expresión dada y asigna el valor resultante a bString.
+
+En contraste, los métodos de instancia se derivan de una instancia concreta de String y deben calificarse con el nombre de la instancia. Por ejemplo:
+
+CopiarDim aString As String = "A String"
+Dim bString As String
+bString = aString.SubString(2,6) ' bString = "String"
+En este ejemplo, el método SubString es un método de la instancia de String (es decir, aString). Realiza una operación en aString y asigna ese valor a bString. 
+
+Nothing y cadenas
+El tiempo de ejecución de Visual Basic y .NET Framework evalúan Nothing de modo diferente cuando se trata de cadenas. Considere el ejemplo siguiente:
+
+CopiarDim MyString As String = "This is my string"
+Dim stringLength As Integer
+' Explicitly set the string to Nothing.
+MyString = Nothing
+' stringLength = 0
+stringLength = Len(MyString)
+' This line, however, causes an exception to be thrown.
+stringLength = MyString.Length
+El tiempo de ejecución de Visual Basic .NET evalúa Nothing como una cadena vacía, es decir, como "". Sin embargo, .NET Framework, no lo hace, e iniciará una excepción cuando se intente realizar una operación de cadena en Nothing. 
+
+Comparar cadenas
+Puede comparar dos cadenas con el método String.Compare. Éste es un método estático sobrecargado de la clase de cadena base. En su forma más común, este método puede utilizarse para comparar directamente dos cadenas basándose en el orden alfabético. Funciona de manera similar a la función StrComp (Función) de Visual Basic. En el siguiente ejemplo se ilustra cómo se utiliza este método:
+
+CopiarDim myString As String = "Alphabetical"
+Dim secondString As String = "Order"
+Dim result As Integer
+result = String.Compare (myString, secondString)
+Este método devuelve un entero que indica la relación entre las dos cadenas comparadas basándose en el criterio de ordenación. Un resultado con un valor positivo indica que la primera cadena es mayor que la segunda. Un resultado negativo indica que la primera cadena es más pequeña y cero indica igualdad entre la dos cadenas. Cualquier cadena, incluida una cadena vacía, se evalúa como mayor que una referencia nula. 
+
+Las sobrecargas adicionales del método String.Compare permiten indicar si deben tenerse en cuenta los formatos de mayúsculas y minúsculas y las referencias culturales, y si deben compararse subcadenas dentro de las cadenas proporcionadas. Para obtener más información sobre cómo comparar cadenas, vea el método String.Compare (Método). Otros métodos relacionados son String.CompareOrdinal (Método) y String.CompareTo (Método).
+
+Buscar cadenas dentro de cadenas
+En ocasiones es útil tener información sobre los caracteres de una cadena y de su posición dentro de la cadena. Una cadena se puede considerar como una matriz de caracteres (instancias Char); se puede recuperar un carácter concreto haciendo referencia al índice de dicho carácter a través de la propiedad Chars. Por ejemplo:
+
+CopiarDim myString As String = "ABCDE"
+Dim myChar As Char
+myChar = myString.Chars(3) ' myChar = "D"
+Puede utilizar el método String.IndexOf para que devuelva el índice donde se encuentra un carácter concreto, como en el siguiente ejemplo:
+
+CopiarDim myString As String = "ABCDE"
+Dim myInteger As Integer
+myInteger = myString.IndexOf("D")  ' myInteger = 3
+En el ejemplo anterior, se utilizó el método IndexOf de myString para obtener el índice correspondiente a la primera instancia del carácter "C" de la cadena. IndexOf es un método sobrecargado; las otras sobrecargas proporcionan métodos para buscar cualquiera de los caracteres de un conjunto o una cadena dentro de otra cadena, entre otros. El comando InStr de Visual Basic .NET también permite realizar funciones similares. Para obtener más información sobre estos métodos, vea String.IndexOf (Método) e InStr (Función). También puede utilizar String.LastIndexOf (Método) para buscar la última aparición de un carácter en una cadena. 
+
+Crear nuevas cadenas a partir de cadenas existentes
+Cuando utiliza cadenas, puede que desee modificar las que tiene para crear otras nuevas. Puede que desee hacer algo tan simple como convertir toda la cadena a mayúsculas o eliminar los espacios finales; o hacer algo más complejo, como extraer una subcadena de una cadena. La clase System.String proporciona una amplia gama de opciones para modificar, manipular y crear nuevas cadenas a partir de las existentes. 
+
+Para combinar varias cadenas, puede utilizar los operadores de concatenación (& o +). También puede utilizar String.Concat (Método) para concatenar una serie de cadenas o cadenas contenidas en objetos. A continuación se muestra un ejemplo del método String.Concat:
+
+CopiarDim aString As String = "A"
+Dim bString As String = "B"
+Dim cString As String = "C"
+Dim dString As String = "D"
+Dim myString As String
+' myString = "ABCD"
+myString = String.Concat(aString, bString, cString, dString) 
+Las cadenas se pueden convertir en cadenas totalmente en mayúsculas o totalmente minúsculas con funciones de Visual Basic .NET UCase (Función) o LCase (Función) o mediante los métodos String.ToUpper (Método) y String.ToLower (Método). A continuación se muestra un ejemplo:
+
+CopiarDim myString As String = "UpPeR oR LoWeR cAsE"
+Dim newString As String
+' newString = "UPPER OR LOWER CASE"
+newString = UCase(myString)
+' newString = "upper or lower case"
+newString = LCase(myString)
+' newString = "UPPER OR LOWER CASE"
+newString = myString.ToUpper
+' newString = "upper or lower case"
+newString = myString.ToLower
+El método String.Format y el comando Format de Visual Basic .Net pueden generar una nueva cadena mediante la aplicación de formato a una cadena determinada. Para obtener información sobre estos comandos, vea Format (Función) o String.Format (Método).
+
+A veces puede ser necesario eliminar espacios iniciales o finales de una cadena. Por ejemplo, podría estar analizando una cadena que tiene espacios insertados con fines de alineación. Puede eliminar esos espacios con la función String.Trim (Método) o con la función Trim de Visual Basic .NET. A continuación se muestra un ejemplo:
+
+CopiarDim spaceString As String = _
+"        This string will have the spaces removed        "
+Dim oneString As String
+Dim twoString As String
+' This removes all trailing and leading spaces.
+oneString = spaceString.Trim
+' This also removes all trailing and leading spaces.
+twoString = Trim(spaceString)
+Si sólo desea quitar los espacios finales, puede utilizar el método String.TrimEnd (Método) o la función RTrim. Del mismo modo, si desea quitar los espacios iniciales, puede utilizar el método String.TrimStart (Método) o la función LTrim. Para obtener más información, vea las funciones LTrim, RTrim y Trim (Funciones).
+
+Las funciones String.Trim y otras relacionadas también permiten eliminar instancias de un carácter específico al final de las cadenas. El siguiente ejemplo elimina todas las instancias iniciales y finales del carácter "#":
+
+CopiarDim myString As String = "#####Remove those!######"
+Dim oneString As String
+OneString = myString.Trim("#")
+También puede agregar caracteres iniciales o finales mediante los métodos String.PadLeft (Método) o String.PadRight (Método).
+
+Si tiene exceso de caracteres en el cuerpo de la cadena, puede eliminarlos con String.Remove (Método), o puede reemplazarlos con otro carácter mediante String.Replace (Método). Por ejemplo:
+
+CopiarDim aString As String = "This is My Str@o@o@ing"
+Dim myString As String
+Dim anotherString As String
+' myString = "This is My String"
+myString = aString.Remove(14, 5)
+' anotherString = "This is Another String"
+anotherString = myString.Replace("My", "Another")
+Puede utilizar el método String.Replace para reemplazar caracteres individuales o cadenas de caracteres. La instrucción Mid (Instrucción) de Visual Basic .NET también se puede utilizar para reemplazar una cadena interior por otra.
+
+Asimismo, puede utilizar String.Insert (Método) para insertar una cadena dentro de otra, como en el ejemplo siguiente:
+
+CopiarDim aString As String = "This is My Stng"
+Dim myString As String
+' Results in a value of "This is My String".
+myString = aString.Insert(13, "ri")
+El primer parámetro del método String.Insert es el índice del carácter tras el cual se insertará la cadena, y el segundo parámetro es la cadena que se va a insertar. 
+
+Se puede concatenar una matriz de cadenas con una cadena separadora mediante String.Join (Método). El siguiente es un ejemplo:
+
+Manejo de cadenas de caracteres (http://msdn.microsoft.com/es-es/library/aa903372(VS.71).aspx)
+
+CopiarDim shoppingItem(2) As String
+Dim shoppingList As String
+shoppingItem(0) = "Milk"
+shoppingItem(1) = "Eggs"
+shoppingItem(2) = "Bread"
+shoppingList = String.Join(",", shoppingItem)
+El valor de shoppingList tras ejecutar este código es "Milk,Eggs,Bread". Es de reseñar que si la matriz tiene miembros vacíos, el método agrega igualmente una cadena separadora entre todas las instancias vacías de la matriz.
+
+También se puede crear una matriz de cadenas a partir de una sola cadena mediante String.Split (Método). En el siguiente ejemplo se demuestra lo contrario que en el ejemplo anterior: se convierte una lista de la compra en una matriz de artículos de la compra. En este caso el separador es una instancia del tipo de datos Char; por tanto, se le agrega el carácter de tipo literal c.
+
+CopiarDim shoppingList As String = "Milk,Eggs,Bread"
+Dim shoppingItem(2) As String
+shoppingItem = shoppingList.Split(","c)
+La función Mid (Función) de Visual Basic .NET puede utilizarse para agregar subcadenas a una cadena. En el siguiente ejemplo se muestra el uso de estas funciones:
+
+CopiarDim aString As String = "Left Center Right"
+Dim rString, lString, mString As String
+' rString = "Right"
+rString = Mid(aString, 13)
+' lString = "Left"
+lString = Mid(aString, 1, 4)
+' mString = "Center"
+mString = Mid(aString, 6,6)
+También se pueden generar subcadenas de una cadena con String.Substring (Método). Este método acepta dos argumentos: el índice del carácter donde debe comenzar la subcadena y la longitud de la subcadena. El método String.Substring funciona de modo similar a la función Mid. A continuación se muestra un ejemplo:
+
+CopiarDim aString As String = "Left Center Right"
+Dim subString As String
+' subString = "Center"
+subString = aString.SubString(5,6)
+Existe una diferencia muy importante entre el método String.SubString y la función Mid. La función Mid toma un argumento que indica la posición del carácter donde debe comenzar la subcadena, a partir de la posición 1. El método String.SubString toma un índice del carácter de la cadena donde debe comenzar la subcadena, a partir de la posición 0. Así, si tiene una cadena "ABCDE", los caracteres individuales se numeran 1,2,3,4,5 si se utilizan con la función Mid, y 0,1,2,3,4 si se utilizan con el función System.String
+
+
+
+
+Averiguar separador decimal:
+
+Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Dim s As String
+    
+    s = System.Globalization.CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator
+    Label1.Text = "El separador decimal es: '" & s & "'"
+    
+    s = System.Globalization.CultureInfo.CurrentCulture.NumberFormat.CurrencyGroupSeparator
+    Label2.Text = "El separador de miles es: '" & s & "'"
+    
+End Sub
+
+Propiedad                   Descripción  
+CurrencyDecimalDigits       Indica el número de posiciones decimales que se van a utilizar en valores de moneda. 
+CurrencyDecimalSeparator    Obtiene o establece la cadena que se va a utilizar como separador decimal en valores de moneda. 
+CurrencyGroupSeparator      Obtiene o establece la cadena que separa grupos de dígitos a la izquierda de la coma decimal en valores de moneda. 
+CurrencyGroupSizes          Obtiene o establece el número de dígitos en cada grupo a la izquierda de la coma decimal en valores de moneda. 
+CurrencyNegativePattern     Obtiene o establece el modelo de formato para los valores de moneda negativos. 
+CurrencyPositivePattern     Obtiene o establece el modelo de formato para los valores de moneda positivos. 
+CurrencySymbol              Obtiene o establece la cadena que se va a utilizar como símbolo de moneda. 
+CurrentInfo                 Obtiene un NumberFormatInfo de sólo lectura que aplica formato a los valores basándose en la referencia cultural actual. 
+DigitSubstitution           Obtiene o establece un valor que especifica cómo la interfaz gráfica de usuario muestra la forma de un dígito. 
+InvariantInfo               Obtiene la NumberFormatInfo predeterminada de sólo lectura que es independiente de la referencia cultural (invariable). 
+IsReadOnly                  Obtiene un valor que indica si NumberFormatInfo es de sólo lectura. 
+NaNSymbol                   Obtiene o establece la cadena que representa el valor NaN (no un número) de IEEE. 
+NativeDigits                Obtiene o establece una matriz de cadenas de dígitos nativos equivalentes a los dígitos occidentales del 0 al 9. 
+NegativeInfinitySymbol      Obtiene o establece la cadena que representa un infinito negativo. 
+NegativeSign                Obtiene o establece la cadena que denota que el número asociado es negativo. 
+NumberDecimalDigits         Obtiene o establece el número de posiciones decimales que se van a utilizar en valores numéricos. 
+NumberDecimalSeparator      Obtiene o establece la cadena que se va a utilizar como separador decimal en valores numéricos. 
+NumberGroupSeparator        Obtiene o establece la cadena que separa grupos de dígitos a la izquierda de la coma decimal en valores numéricos. 
+NumberGroupSizes            Obtiene o establece el número de dígitos en cada grupo a la izquierda de la coma decimal en valores numéricos. 
+NumberNegativePattern       Obtiene o establece el modelo de formato para los valores numéricos negativos. 
+PercentDecimalDigits        Obtiene o establece el número de posiciones decimales que se van a utilizar en valores de porcentaje. 
+PercentDecimalSeparator     Obtiene o establece la cadena que se van a utilizar como separador decimal en valores de porcentaje. 
+PercentGroupSeparator       Obtiene o establece la cadena que separa grupos de dígitos a la izquierda de la coma decimal en valores de porcentaje. 
+PercentGroupSizes           Obtiene o establece el número de dígitos en cada grupo a la izquierda de la coma decimal en valores de porcentaje. 
+PercentNegativePattern      Obtiene o establece el modelo de formato para los valores de porcentaje negativos. 
+PercentPositivePattern      Obtiene o establece el modelo de formato para los valores de porcentaje positivos. 
+PercentSymbol               Obtiene o establece la cadena que se va a utilizar como símbolo de porcentaje. 
+PerMilleSymbol              Obtiene o establece la cadena que se va a utilizar como símbolo de por mil. 
+PositiveInfinitySymbol      Obtiene o establece la cadena que representa un infinito positivo. 
+PositiveSign                Obtiene o establece la cadena que denota que el número asociado es positivo. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Leer un archivo plano, con un bucle hasta el final del archivo:
+leer = File.OpenText("Z:\Troyasoft\Contratos\info main.txt")
+
+
+While leer.Peek <> -1
+'Dim a As String
+'leer.Peek = 1
+a = leer.ReadLine()
+b = leer.ReadLine()
+c = leer.ReadLine()
+d = leer.ReadLine()
+f = leer.ReadLine()
+g = leer.ReadLine()
+h = leer.ReadLine()
+i = leer.ReadLine()
+j = leer.ReadLine()
+End While
+' leer.ToString()
+
+
+leer.Close()
+
+
+
+
+6/9/09
+Falta:
+1) Comandos transparentes de zoom y pan, para que en medio de un comando se puedan usar sin cortar el comando.
+2) Enter = Boton derecho.
+
+
+
+15/6/09
+1) Se agrego funcion doble click sobre textos, para editarlos.
+2) Se corrigió la funcion "Close"
+
+
+20/5/09, Pendiente:
+1) Giro de ucs en el modelo
+2) Pantalla para edicion de atributos
+3) Bloqueo de viewports
+4) Icono (lamparita o algo asi) para apagar layer rapido
+5) Apagar y encender distintos en viewports distintos
+6) Bring to front / send to back
+7) Resaltar el viewport activo
+
+* edicion de textos con seleccion de los mismos, con un click o con dos click, pero al seleccionar el texto
+  abrir pantalla de modificacion.
+* al oprimir la tecla escape se debe deseleccionar todo, aunque el foco no lo tenga la pantalla principal o
+  sea que si el foco lo tiene la grilla de propiedades tambien funcione
+
+
+14/5/2009
+* nuevo boton para cambiar el color de fondo del espacio papel
+
+8/4/2009
+* Guardado automatico del osnap
+* Habilitacion de las teclas de funcion F3 (osnap on/off), F7 (grid on/of), F8 (ortogonal on/of), F9 (snap on/of)
+
+1/4/2009
+* En las toolbars se pueden reordenar los iconos manteniendo pulsada la tecla Alt
+* Se pueden mover los iconos de las toolbars entre ellas, pulsando la tecla Alt.
+* Se retiro del menu Archivo la opcion "configurar impresora" para eliminar redundancia, ya que ese boton
+  ya esta en la pantalla de imprimir. Pantalla de uso obligatorio en la operacion de imprimir.
+* Nueva version del comando fillet. El primero pregunta el radio y el nuevo no pregunta radio, es para 
+  radio = cero o vertices agudos.
+* Se retiro del menu agrimensores las opciones "cotas 420 Geodesia habilitadas/deshabilitadas", ya que no se
+  utilizan en la nueva plantilla de geodesia con todo el dibujo contenido en el espacio modelo.    
+* Se retiro de la pantalla principal el boton "Actualizar ViewPort", ya que no es necesario con las funciones
+  de esta version, es automatico, cuando se crea un nuevo viewport.
+* La creacion de nuevos viewports trae implicito un zoom extents.
+
+
+19/3/2009
+* finalización de función Alinear. Funciona igual que en la versión anterior.
+* En todas las funciones de edición se incorporó el modo entidad-verbo. El modo que ya estaba funcionando era verbo-ent
+* Cuando se cierra la aplicacion desde la cruz arriba a la derecha se comporta bien. 
+* Incorporación del nombre del archivo activo en la barra superior. O nada para archivos nuevos.
+
+
+
+
+
+nueva funcion de abrir archivos dwt (falta terminar)
+
+menu vistas, viewport, terminado (faltaba lo de las escalas preseteadas y las personalizadas y el giro y
+restitucion a la posicion original
+
+textos, faltaba pantalla de estilos de texto
+
+textos, cuando inicia el pgma carga los textos de la plantilla arba (faltaba)
+
+texto multilinea terminado
+
+cota completada con los estilos de la plantilla
+
+bloques, cuando se inicia el pgma carga los bloques de la plantilla de arba
+
+menu agrim terminado
+
+
+
+
+
+1) Comando alinear personalizado
+2) Traduccion
+3) Boton derecho Mouse
+4) trabar los layers de la plantilla de catastro..
+
+ojo, para la instalacion:
+							1) el archivo de la plantilla de geodesia (.dwt) esta exportado a dwg y puesto
+				en la carpeta c:\CpaCad.
+
+
+Dear sir,
+
+Regarding your inquires :
+1) Please see the article : http://www.vdraw.com/Export6/60000556-Display_Framed_control_like_Scrollable_or_like_vdBase_control.htm specially the code in btn_ShowAsFramed_Click.
+You need a code like : 
+
+ Dim propertygrid As vdPropertyGrid.vdPropertyGrid
+    propertygrid = VdFramedControl1.vdGrid
+    propertygrid.SelectedObject = VdFramedControl1.BaseControl.ActiveDocument ' set the default value
+    
+    '// Here we find the name of the Grip Selection
+    Dim gripset As VectorDraw.Professional.vdCollections.vdSelection
+    Dim selsetname As String = "VDGRIPSET_" + VdFramedControl1.BaseControl.ActiveDocument.ActiveLayOut.Handle.ToStringValue()
+    If Not VdFramedControl1.BaseControl.ActiveDocument.ActiveLayOut.ActiveViewPort Is Nothing Then
+        selsetname = selsetname + VdFramedControl1.BaseControl.ActiveDocument.ActiveLayOut.ActiveViewPort.Handle.ToStringValue()
+    End If
+
+    '// This is the Grip Selections that is show in the PropertyGrid
+    gripset = VdFramedControl1.BaseControl.ActiveDocument.ActiveLayOut.Document.Selections.FindName(selsetname)
+    If Not (gripset Is Nothing) Then
+        If gripset.Count > 0 Then propertygrid.SelectedObject = gripset
+    End If
+
+2) For the color dialog a vdColor is required in order to get the value. So try a code like :
+
+VectorDraw.Professional.vdObjects.
+vdColor mColor = new VectorDraw.Professional.vdObjects.vdColor();
+mColor.Palette = vdFramedControl.BaseControl.ActiveDocument.Palette;
+VectorDraw.Professional.Dialogs.frmColor dialog = new VectorDraw.Professional.Dialogs.frmColor(mColor, false);
+dialog.ShowDialog(this);
+//Check here the mColor values, 
+ 
+Best Regards,
+
+
+
+
+
+
+
+Subject
+Display Framed control like Scrollable or like vdBase control 
+
+Summary
+How can I use a vdFramed control but display it like vdScrollable control or like vdBase control ? 
+
+Solution
+You can use a code like :
+
+Private Sub btn_ShowAsFramed_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ShowAsFramed.Click
+    '//Show PropertyGrid and Status Bar
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.CommandLine, True)
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.PropertyGrid, True)
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.StatusBar, True)
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.LayoutTab, True)
+    '//Show scrollbars
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.HorizodalScroll, True)
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.VericalScroll, True)
+    '//Show the Layout Tab
+    VdFramedControl1.ScrollableControl.SetShowLayoutTab(True)
+    '//if you set the vdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.StatusBar ,true)
+    '// then you show some "features" like :
+    VdFramedControl1.SetStatusBarOption(vdControls.vdFramedControl.StatusBarOptions.ProgressBar, True)
+    VdFramedControl1.SetStatusBarOption(vdControls.vdFramedControl.StatusBarOptions.SnapButton, True)
+    VdFramedControl1.SetStatusBarOption(vdControls.vdFramedControl.StatusBarOptions.Menu, True)
+    VdFramedControl1.SetStatusBarOption(vdControls.vdFramedControl.StatusBarOptions.GridButton, True)
+    VdFramedControl1.SetStatusBarOption(vdControls.vdFramedControl.StatusBarOptions.Paper, True)
+    VdFramedControl1.SetStatusBarOption(vdControls.vdFramedControl.StatusBarOptions.OrthoButton, True)
+    VdFramedControl1.SetStatusBarOption(vdControls.vdFramedControl.StatusBarOptions.OsnapButton, True)
+    '// show the menu
+    VdFramedControl1.ShowMenu(True)
+
+    '// In the vdFramed's PropertyGrid the selection is show. This code below finds the selection and 
+    '// set this to be shown in the Property Grid
+    Dim propertygrid As vdPropertyGrid.vdPropertyGrid
+    propertygrid = VdFramedControl1.vdGrid
+    propertygrid.SelectedObject = VdFramedControl1.BaseControl.ActiveDocument ' set the default value
+    '// Here we find the name of the Grip Selection
+    Dim gripset As VectorDraw.Professional.vdCollections.vdSelection
+    Dim selsetname As String = "VDGRIPSET_" + VdFramedControl1.BaseControl.ActiveDocument.ActiveLayOut.Handle.ToStringValue()
+    If Not VdFramedControl1.BaseControl.ActiveDocument.ActiveLayOut.ActiveViewPort Is Nothing Then
+        selsetname = selsetname + VdFramedControl1.BaseControl.ActiveDocument.ActiveLayOut.ActiveViewPort.Handle.ToStringValue()
+    End If
+
+    '// This is the Grip Selections that is show in the PropertyGrid
+    gripset = VdFramedControl1.BaseControl.ActiveDocument.ActiveLayOut.Document.Selections.FindName(selsetname)
+    If Not (gripset Is Nothing) Then
+        If gripset.Count > 0 Then propertygrid.SelectedObject = gripset
+    End If
+End Sub
+
+Private Sub btn_ShowAsScrollable_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ShowAsScrollable.Click
+    '//Hide PropertyGrid, CommandLine and Status Bar
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.CommandLine, False)
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.PropertyGrid, False)
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.StatusBar, False)
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.LayoutTab, True)
+    '//Show scrollbars
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.HorizodalScroll, True)
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.VericalScroll, True)
+    '//Show the Layout Tab
+    VdFramedControl1.ScrollableControl.SetShowLayoutTab(True)
+    '//if you set the vdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.StatusBar ,true)
+    '// then you can hide some "features" like :
+    VdFramedControl1.SetStatusBarOption(vdControls.vdFramedControl.StatusBarOptions.ProgressBar, False)
+    VdFramedControl1.SetStatusBarOption(vdControls.vdFramedControl.StatusBarOptions.SnapButton, False)
+    VdFramedControl1.SetStatusBarOption(vdControls.vdFramedControl.StatusBarOptions.Menu, False
+    VdFramedControl1.SetStatusBarOption(vdControls.vdFramedControl.StatusBarOptions.GridButton, False)
+    VdFramedControl1.SetStatusBarOption(vdControls.vdFramedControl.StatusBarOptions.Paper, False)
+    VdFramedControl1.SetStatusBarOption(vdControls.vdFramedControl.StatusBarOptions.OrthoButton, False)
+    VdFramedControl1.SetStatusBarOption(vdControls.vdFramedControl.StatusBarOptions.OsnapButton, False)
+    '// Hide the Menu
+    VdFramedControl1.ShowMenu(False)
+End Sub
+
+Private Sub btn_ShowAsBase_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ShowAsBase.Click
+    '//Hide PropertyGrid, commandLine, Layout tab and Status Bar
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.CommandLine, False)
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.PropertyGrid, False)
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.StatusBar, False)
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.LayoutTab, False)
+    '//Hide scrollbars
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.HorizodalScroll, False)
+    VdFramedControl1.SetLayoutStyle(vdControls.vdFramedControl.LayoutStyle.VericalScroll, False)
+    '//Hide the Layout Tab
+    VdFramedControl1.ScrollableControl.SetShowLayoutTab(False)
+    VdFramedControl1.ScrollableControl.SetShowVscroll(False)
+    VdFramedControl1.ScrollableControl.SetShowVscroll(False)
+End Sub

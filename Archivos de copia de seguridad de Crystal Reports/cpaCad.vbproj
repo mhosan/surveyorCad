@@ -1,0 +1,1775 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A1BFBF5-1A8F-41B9-A34B-E76C98D3FC94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>mhCad.My.MyApplication</StartupObject>
+    <RootNamespace>mhCad</RootNamespace>
+    <AssemblyName>cpaCadV2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>Resources\Iconos\cpaAzu.ico</ApplicationIcon>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <ManifestCertificateThumbprint>6D82F18CE66413C3CB67F9E46A60CA0BBF893260</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\DesaMhcad\DesaDotNet\Implementacion\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <TargetCulture>es-AR</TargetCulture>
+    <ProductName>CpaCadxxx</ProductName>
+    <PublisherName>Marcelo Hosan</PublisherName>
+    <SuiteName>CpaCad</SuiteName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>C:\DesaMhcad\DesaDotNet\mhCad\mhCad</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>obj\x86\Release\</OutputPath>
+    <DocumentationFile>cpaCadV2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Pavilion\</OutputPath>
+    <DocumentationFile>cpaCadV2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Pavilion\</OutputPath>
+    <NoWarn>42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>obj\x86\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>cpaCadV2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>cpaCadV2.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb1">
+      <HintPath>.\adodb.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=12.0.1100.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\oimVStudio\CristalReportsDLLs\CrystalDecisions.Enterprise.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=12.0.1100.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\oimVStudio\CristalReportsDLLs\CrystalDecisions.Enterprise.InfoStore.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Interop.ADOX, Version=2.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>.\Interop.ADOX.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.CAPICOM, Version=2.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>obj\Debug\Interop.CAPICOM.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>.\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="RenderFormats, Version=6.6022.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="vdCommandLine, Version=6.6020.1.2, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\VectorDraw\Common\vdCommandLine.dll</HintPath>
+    </Reference>
+    <Reference Include="vdFramedControl, Version=6.6020.1.2, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\VectorDraw\Common\vdFramedControl.dll</HintPath>
+    </Reference>
+    <Reference Include="vdPropertyGrid, Version=6.6020.1.2, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\VectorDraw\Common\vdPropertyGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="VDrawBaseControl, Version=6.6020.1.2, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\VectorDraw\Common\VDrawBaseControl.dll</HintPath>
+    </Reference>
+    <Reference Include="vdScrollableControl, Version=6.6022.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="VectorDraw.Actions, Version=6.6020.1.2, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\VectorDraw\Common\VectorDraw.Actions.dll</HintPath>
+    </Reference>
+    <Reference Include="VectorDraw.Generics, Version=6.6020.1.2, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\VectorDraw\Common\VectorDraw.Generics.dll</HintPath>
+    </Reference>
+    <Reference Include="VectorDraw.Geometry, Version=6.6020.1.2, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\VectorDraw\Common\VectorDraw.Geometry.dll</HintPath>
+    </Reference>
+    <Reference Include="VectorDraw.Professional, Version=6.6020.1.2, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\VectorDraw\Common\VectorDraw.Professional.dll</HintPath>
+    </Reference>
+    <Reference Include="VectorDraw.Render, Version=6.6020.1.2, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\VectorDraw\Common\VectorDraw.Render.dll</HintPath>
+    </Reference>
+    <Reference Include="VectorDraw.Serialize, Version=6.6020.1.2, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\VectorDraw\Common\VectorDraw.Serialize.dll</HintPath>
+    </Reference>
+    <Reference Include="WinMsgMannager, Version=6.6024.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Archivos de programa\VectorDraw\Common\WinMsgMannager.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="pd\BO\modBuscarPldelMz.vb" />
+    <Compile Include="pd\frmEstilos.Designer.vb">
+      <DependentUpon>frmEstilos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\frmEstilos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\modGuardarCambios.vb" />
+    <Compile Include="pd\infos\CedulaFinal_1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="pd\frmBuscaPersonas.Designer.vb">
+      <DependentUpon>frmBuscaPersonas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\frmBuscaPersonas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguraImpresion.Designer.vb">
+      <DependentUpon>frmConfiguraImpresion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguraImpresion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmObjetosAgrimensura.Designer.vb">
+      <DependentUpon>frmObjetosAgrimensura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmObjetosAgrimensura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAte.Designer.vb">
+      <DependentUpon>frmAte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPHUnidadesFuncionales.Designer.vb">
+      <DependentUpon>frmPHUnidadesFuncionales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPHUnidadesFuncionales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCodigoActivar.Designer.vb">
+      <DependentUpon>frmCodigoActivar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCodigoActivar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguraCursor.Designer.vb">
+      <DependentUpon>frmConfiguraCursor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguraCursor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguraEspacioModelo.Designer.vb">
+      <DependentUpon>frmConfiguraEspacioModelo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguraEspacioModelo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCotaEdit.Designer.vb">
+      <DependentUpon>frmCotaEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCotaEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosActivar.Designer.vb">
+      <DependentUpon>frmDatosActivar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosActivar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEncenderApagarLayers.Designer.vb">
+      <DependentUpon>frmEncenderApagarLayers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEncenderApagarLayers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrilla.Designer.vb">
+      <DependentUpon>frmGrilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGrilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNovedades.Designer.vb">
+      <DependentUpon>frmNovedades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNovedades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevoLayout.Designer.vb">
+      <DependentUpon>frmNuevoLayout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevoLayout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPHPoligonoDominio.Designer.vb">
+      <DependentUpon>frmPHPoligonoDominio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPHPoligonoDominio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPHPoligonosComunes.Designer.vb">
+      <DependentUpon>frmPHPoligonosComunes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPHPoligonosComunes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPuntas.Designer.vb">
+      <DependentUpon>frmPuntas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPuntas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPHSuperficiesComunes.Designer.vb">
+      <DependentUpon>frmPHSuperficiesComunes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPHSuperficiesComunes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTextEdit.Designer.vb">
+      <DependentUpon>frmTextEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTextEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPpal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPpal.Designer.vb">
+      <DependentUpon>frmPpal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropiedades.Designer.vb">
+      <DependentUpon>frmPropiedades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropiedades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTramadosEdit.Designer.vb">
+      <DependentUpon>frmTramadosEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTramadosEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPHUnidadesComplementarias.Designer.vb">
+      <DependentUpon>frmPHUnidadesComplementarias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPHUnidadesComplementarias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modAccess.vb" />
+    <Compile Include="modDbf.vb" />
+    <Compile Include="modInfoAyudas.vb" />
+    <Compile Include="modAlinear.vb" />
+    <Compile Include="modAntecede.vb" />
+    <Compile Include="modArchivos.vb" />
+    <Compile Include="modBloques.vb" />
+    <Compile Include="modCertifAmoj.vb" />
+    <Compile Include="modColores.vb" />
+    <Compile Include="modConfigura.vb" />
+    <Compile Include="modConfReg.vb" />
+    <Compile Include="modCotas.vb" />
+    <Compile Include="modDeclaraciones.vb" />
+    <Compile Include="modEspesores.vb" />
+    <Compile Include="modGrillaP.vb" />
+    <Compile Include="modGrips.vb" />
+    <Compile Include="modLayers.vb" />
+    <Compile Include="modLayouts.vb" />
+    <Compile Include="modParseaStr.vb" />
+    <Compile Include="modPublico.vb" />
+    <Compile Include="modTextos.vb" />
+    <Compile Include="modTipoLinea.vb" />
+    <Compile Include="modUcs.vb" />
+    <Compile Include="modVersion.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pd\BO\CedulaCastral.vb" />
+    <Compile Include="pd\BO\Direccion.vb" />
+    <Compile Include="pd\BO\Nomenclatura.vb" />
+    <Compile Include="pd\BO\NomenclaturaCatastral.vb" />
+    <Compile Include="pd\conexiones.vb" />
+    <Compile Include="pd\frmDatosCroquis.designer.vb">
+      <DependentUpon>frmDatosCroquis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\frmDatosCroquis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\frmEntrada.designer.vb">
+      <DependentUpon>frmEntrada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\frmEntrada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\frmEspacioCirculatorio.Designer.vb">
+      <DependentUpon>frmEspacioCirculatorio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\frmEspacioCirculatorio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\frmInicial.designer.vb">
+      <DependentUpon>frmInicial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\frmInicial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\frmLocalidades.designer.vb">
+      <DependentUpon>frmLocalidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\frmLocalidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\frmMuros.designer.vb">
+      <DependentUpon>frmMuros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\frmMuros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\frmParcela.designer.vb">
+      <DependentUpon>frmParcela.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\frmParcela.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\frmPersonas.designer.vb">
+      <DependentUpon>frmPersonas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\frmPersonas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\frmPruebaMacizo.Designer.vb">
+      <DependentUpon>frmPruebaMacizo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\frmPruebaMacizo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\frmPruebaParcela.Designer.vb">
+      <DependentUpon>frmPruebaParcela.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\frmPruebaParcela.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\frmServicio.designer.vb">
+      <DependentUpon>frmServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\frmServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\infos\CedulaFinal_11.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CedulaFinal_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="pd\infos\Rep.Designer.vb">
+      <DependentUpon>Rep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\infos\Rep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\infos\Var_Cedula.vb" />
+    <Compile Include="pd\modAbrirTrabajo.vb" />
+    <Compile Include="pd\modDatosMacizo.vb" />
+    <Compile Include="pd\modFuncionesMacizo.vb" />
+    <Compile Include="pd\modGeneraJpg.vb" />
+    <Compile Include="pd\modMuros.vb" />
+    <Compile Include="pd\modPruebaMacizo2.vb" />
+    <Compile Include="pd\modPublico_pd.vb" />
+    <Compile Include="pd\frmUbicaParcela.Designer.vb">
+      <DependentUpon>frmUbicaParcela.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\frmUbicaParcela.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\frmNuevo.designer.vb">
+      <DependentUpon>frmNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\frmNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\frmMacizo.Designer.vb">
+      <DependentUpon>frmMacizo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\frmMacizo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\modBorrarEntidades.vb" />
+    <Compile Include="pd\modDistanciaEsquina.vb" />
+    <Compile Include="pd\modMacizo.vb" />
+    <Compile Include="pd\modConn.vb" />
+    <Compile Include="pd\modDatosDB.vb" />
+    <Compile Include="pd\modMacizoLinderos.vb" />
+    <Compile Include="pd\modParcela.vb" />
+    <Compile Include="pd\modPegarDatosEntidad.vb" />
+    <Compile Include="pd\Nueva_localidad.designer.vb">
+      <DependentUpon>Nueva_localidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\Nueva_localidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\partidos.designer.vb">
+      <DependentUpon>partidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pd\partidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pd\Profesional.designer.vb" />
+    <Compile Include="pd\Profesional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="pd\frmBuscaPersonas.resx">
+      <DependentUpon>frmBuscaPersonas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguraImpresion.resx">
+      <DependentUpon>frmConfiguraImpresion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmObjetosAgrimensura.resx">
+      <DependentUpon>frmObjetosAgrimensura.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAte.resx">
+      <DependentUpon>frmAte.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPHUnidadesFuncionales.resx">
+      <DependentUpon>frmPHUnidadesFuncionales.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCodigoActivar.resx">
+      <DependentUpon>frmCodigoActivar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguraCursor.resx">
+      <DependentUpon>frmConfiguraCursor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguraEspacioModelo.resx">
+      <DependentUpon>frmConfiguraEspacioModelo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCotaEdit.resx">
+      <DependentUpon>frmCotaEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosActivar.resx">
+      <DependentUpon>frmDatosActivar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEncenderApagarLayers.resx">
+      <DependentUpon>frmEncenderApagarLayers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrilla.resx">
+      <DependentUpon>frmGrilla.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNovedades.resx">
+      <DependentUpon>frmNovedades.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoLayout.resx">
+      <DependentUpon>frmNuevoLayout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPHPoligonoDominio.resx">
+      <DependentUpon>frmPHPoligonoDominio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPHPoligonosComunes.resx">
+      <DependentUpon>frmPHPoligonosComunes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPuntas.resx">
+      <DependentUpon>frmPuntas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPHSuperficiesComunes.resx">
+      <DependentUpon>frmPHSuperficiesComunes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTextEdit.resx">
+      <DependentUpon>frmTextEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPpal.resx">
+      <DependentUpon>frmPpal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropiedades.resx">
+      <DependentUpon>frmPropiedades.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTramadosEdit.resx">
+      <DependentUpon>frmTramadosEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPHUnidadesComplementarias.resx">
+      <DependentUpon>frmPHUnidadesComplementarias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\frmDatosCroquis.resx">
+      <DependentUpon>frmDatosCroquis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\frmEntrada.resx">
+      <DependentUpon>frmEntrada.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\frmEspacioCirculatorio.resx">
+      <DependentUpon>frmEspacioCirculatorio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\frmEstilos.resx">
+      <DependentUpon>frmEstilos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\frmInicial.resx">
+      <DependentUpon>frmInicial.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\frmLocalidades.resx">
+      <DependentUpon>frmLocalidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\frmMuros.resx">
+      <DependentUpon>frmMuros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\frmParcela.resx">
+      <DependentUpon>frmParcela.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\frmPersonas.resx">
+      <DependentUpon>frmPersonas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\frmPruebaMacizo.resx">
+      <DependentUpon>frmPruebaMacizo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\frmPruebaParcela.resx">
+      <DependentUpon>frmPruebaParcela.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\frmServicio.resx">
+      <DependentUpon>frmServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\frmUbicaParcela.resx">
+      <DependentUpon>frmUbicaParcela.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\frmNuevo.resx">
+      <DependentUpon>frmNuevo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\frmMacizo.resx">
+      <DependentUpon>frmMacizo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\infos\CedulaFinal_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CedulaFinal_11.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\infos\Rep.resx">
+      <DependentUpon>Rep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\Inicial.resx" />
+    <EmbeddedResource Include="pd\Nueva_localidad.resx">
+      <DependentUpon>Nueva_localidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\partidos.resx">
+      <DependentUpon>partidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pd\Profesional.resx" />
+    <EmbeddedResource Include="pd\RptCedulaCatastral.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\mhCad.BO.CedulaCastral.datasource" />
+    <None Include="My Project\DataSources\mhCad.BO.Direccion.datasource" />
+    <None Include="My Project\DataSources\mhCad.BO.Nomenclatura.datasource" />
+    <None Include="My Project\DataSources\mhCad.BO.NomenclaturaCatastral.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="_instaladorPD\DesinstalarUtilitarioWSeven.pdf" />
+    <None Include="_instaladorPD\DesinstalarUtilitarioWVista.pdf" />
+    <None Include="_instaladorPD\DesinstalarUtilitarioWXp.pdf" />
+    <None Include="_instaladorPD\instalarCpaCad_a_mano.pdf" />
+    <None Include="_instaladorPD\Instructivo instalación.doc" />
+    <None Include="_instaladorPD\Instructivo instalación.pdf" />
+    <None Include="_instaladorPD\mhCad.chm" />
+    <None Include="_instaladorPD\mhcad.sys" />
+    <None Include="_instaladorPD\PlantAmoj01.dwg" />
+    <None Include="_instaladorPD\PlantGeodesia.dwt" />
+    <None Include="_instaladorPD\PlantGeodesia01.dwg" />
+    <None Include="_instaladorPD\VdrawEndUserRetargetableModule.msm" />
+    <None Include="_instaladorPD\_paso 1_aplicacion\cpaCad_paso1.SED" />
+    <None Include="_instaladorPD\_paso 1_aplicacion\InstalaCpaCad.msi" />
+    <None Include="_instaladorPD\_paso 2_conversor\cpaCad_paso2.SED" />
+    <None Include="_instaladorPD\_paso 2_conversor\vdLiteFileConverter.msi" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_abrir.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_alinear.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_arco.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_borrar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_break.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_cen.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_circulo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_confOsnap.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_copy.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_copyclip.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_cut.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_elipse.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_end.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_explode.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_extend.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_fillet.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_hatch.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_imprimir.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_int.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_linea.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_mid.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_mirror.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_mover.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_nearest.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_non.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_nuevo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_offset.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_pan.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_pegar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_per.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_poli.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_prop.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_punto.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_rectang.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_redo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_rotar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_scale.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_texto.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_trim.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_undo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_ZE.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_ZP.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acad_ZW.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Activado.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlinearV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Archivo Abrir.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Archivo Nuevo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arco.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArcV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ayuda.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borrar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BreakV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChpropV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CircleV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circulo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copiar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CopyClipV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CopyV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cortar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cpaAzu.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CutV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DELETE.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desactivado.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deshacer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deshacer2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diskete.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elipse.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EllipseV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EraseV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Explode.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExplodeV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Extend.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExtendV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FilletV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grips.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grips_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grips_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HatchV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Impresora.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layers.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Linea.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LineV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ltypes.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LWeigth.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MergeAnim_16i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mhcad_16x16.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mhcad_32x32.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mhcad_48x48.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MHcad_icono.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mhcad_rectang.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mhcad_rectang.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mhcad_rectang_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mhcad_rectang_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MirrorV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modificar_Borrar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modificar_Escala.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modificar_Pegar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modificar_Simetria.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modificar_Simetria.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mover.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoveV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\None.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OffsetV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pan.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PasteV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pegar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PointV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Poligono.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Polilinea.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolylineV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Punto.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reahcer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recortar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangulo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RectangV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedoV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rehacer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rotar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RotateV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scale.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ScaleV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snap to Apparent Intersection.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snap to Center.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snap to Cuadrant.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snap to Endpoint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snap to Midpoint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snap to Perpendicular.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snap to Tangent.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Textos.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tramados %28Hatch%29.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrimV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UndoV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomAmpliar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomE.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomEV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomP.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomPV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomReducir.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomRT.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomRTV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomW.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomWV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3D_Hide.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3D_orbit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3D_ucs.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3D_wcs.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3D_wire.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3dEdgeON.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3dPmesh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3drender.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3DVBACK.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3DVBOTTOM.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3DVFRONT.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3dviewshade.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3DVLEFT.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3DVNE.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3DVNW.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3DVRIGHT.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3DVSE.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3DVSW.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\3DVTOP.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\AddAttrib.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Arc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\array.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\ARRAYPolar.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\bHatch.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\box.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\break.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Circle.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\ClipCopy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\cone.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Configurar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\copyent.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\cpaAzu.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\cut.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\DimAlign.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Dimdiam.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\DimHor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\DimRadial.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\DimRot.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\DimVer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\EditAttrib.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\ellipse.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\emtext.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Erase.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\EXPLODE.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\extend.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\face.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\fillet.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\image.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\InsertBlock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Leader.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Line.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\makeblock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\mesh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\mhcad..ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\mhcad3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\mhcad_16x16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\mirror.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Move.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\mtext.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\NewFile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\offset.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\OpenFile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\paste.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Point.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Polyline.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\printFile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Ray.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Rect.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Redo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\redraw.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\regen.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Rotate.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\saveFile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Scale.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\select.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\sphere.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\stretch.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Text.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\trim.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\Undo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\writeblock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\XLine.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\YESNO03A.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\zoomALL.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\ZoomE.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\zoomIN.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\ZoomOUT.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos\zoomP.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\Iconos\ZoomW.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pd\infos\FuncionesComunes.txt" />
+    <Content Include="pd\infos\Modificaciones.txt" />
+    <Content Include="_instaladorPD\autosave.txt" />
+    <Content Include="_instaladorPD\capicom.dll" />
+    <Content Include="_instaladorPD\Commands.txt" />
+    <Content Include="_instaladorPD\config.txt" />
+    <Content Include="_instaladorPD\ExtraMethods.dll" />
+    <Content Include="_instaladorPD\haceMd5.exe" />
+    <Content Include="_instaladorPD\selecciona.cur" />
+    <Content Include="_instaladorPD\selecciona1.cur" />
+    <Content Include="_instaladorPD\ultimos.txt" />
+    <Content Include="_instaladorPD\vdFormsRes.dll" />
+    <Content Include="_instaladorPD\Vdres.txt" />
+    <Content Include="_instaladorPD\_paso 1_aplicacion\cpaCad_paso1.EXE" />
+    <Content Include="_instaladorPD\_paso 1_aplicacion\setup.exe" />
+    <Content Include="_instaladorPD\_paso 2_conversor\cpaCad_paso2.EXE" />
+    <Content Include="_instaladorPD\_paso 2_conversor\setup.exe" />
+    <Content Include="_instaladorPD\_Paso 3_frameworks\dotnetfx.exe" />
+    <None Include="mhCad.chm" />
+    <None Include="Resources\et_GATTE24.bmp" />
+    <None Include="Resources\dotnetfx35setup.exe" />
+    <None Include="Resources\htmlhelp.exe" />
+    <None Include="Resources\WindowsInstaller-KB893803-v2-x86.exe" />
+    <None Include="Resources\color_wheel.png" />
+    <None Include="Resources\et_arctxt16.bmp" />
+    <None Include="Resources\et_arctxt24.bmp" />
+    <None Include="Resources\et_Breakl16.bmp" />
+    <None Include="Resources\et_Breakl24.bmp" />
+    <None Include="Resources\et_chgtxt16.bmp" />
+    <None Include="Resources\et_chgtxt24.bmp" />
+    <None Include="Resources\et_clipit16.bmp" />
+    <None Include="Resources\et_clipit24.bmp" />
+    <None Include="Resources\et_fstsel16.bmp" />
+    <None Include="Resources\et_fstsel24.bmp" />
+    <None Include="Resources\et_mocoro24.bmp" />
+    <None Include="Resources\et_mstrch16.bmp" />
+    <None Include="Resources\et_rtucs16.bmp" />
+    <None Include="Resources\et_rtucs24.bmp" />
+    <None Include="Resources\et_shwurl16.bmp" />
+    <None Include="Resources\et_xrflst16.bmp" />
+    <None Include="Resources\et_xrflst24.bmp" />
+    <None Include="Resources\collapse.png" />
+    <None Include="Resources\collapse - copia.png" />
+    <None Include="Resources\contextMenuPanTo.gif" />
+    <None Include="Resources\contextMenuPanTo - copia.gif" />
+    <None Include="Resources\contextMenuReExecute.gif" />
+    <None Include="Resources\contextMenuRefresh.gif" />
+    <None Include="Resources\contextMenuRefresh - copia.gif" />
+    <None Include="Resources\dismiss.png" />
+    <None Include="Resources\dismiss - copia.png" />
+    <None Include="Resources\doubleLeft.png" />
+    <None Include="Resources\doubleLeft - copia.png" />
+    <None Include="Resources\doubleRight.png" />
+    <None Include="Resources\doubleRight - copia.png" />
+    <None Include="Resources\down.gif" />
+    <None Include="Resources\down - copia.gif" />
+    <None Include="Resources\dropdown.gif" />
+    <None Include="Resources\dropdown - copia.gif" />
+    <None Include="Resources\edClear-selected-feature.gif" />
+    <None Include="Resources\edClear-selected-feature - copia.gif" />
+    <None Include="Resources\edClear-selected-feature-ON.gif" />
+    <None Include="Resources\edClear-selected-feature-ON - copia.gif" />
+    <None Include="Resources\edClear-selected-feature-OVER.gif" />
+    <None Include="Resources\edClear-selected-feature-OVER - copia.gif" />
+    <None Include="Resources\edCopy-line.gif" />
+    <None Include="Resources\edCopy-line - copia.gif" />
+    <None Include="Resources\edCopy-line-ON.gif" />
+    <None Include="Resources\edCopy-line-ON - copia.gif" />
+    <None Include="Resources\edCopy-line-OVER.gif" />
+    <None Include="Resources\edCopy-line-OVER - copia.gif" />
+    <None Include="Resources\edCopy-point.gif" />
+    <None Include="Resources\edCopy-point - copia.gif" />
+    <None Include="Resources\edCopy-point-ON.gif" />
+    <None Include="Resources\edCopy-point-ON - copia.gif" />
+    <None Include="Resources\edCopy-point-OVER.gif" />
+    <None Include="Resources\edCopy-point-OVER - copia.gif" />
+    <None Include="Resources\edCopy-polygon.gif" />
+    <None Include="Resources\edCopy-polygon - copia.gif" />
+    <None Include="Resources\edCopy-polygon-ON.gif" />
+    <None Include="Resources\edCopy-polygon-ON - copia.gif" />
+    <None Include="Resources\edCopy-polygon-OVER.gif" />
+    <None Include="Resources\edCopy-polygon-OVER - copia.gif" />
+    <None Include="Resources\edCreate-line.gif" />
+    <None Include="Resources\edCreate-line - copia.gif" />
+    <None Include="Resources\edCreate-line-ON.gif" />
+    <None Include="Resources\edCreate-line-ON - copia.gif" />
+    <None Include="Resources\edCreate-line-OVER.gif" />
+    <None Include="Resources\edCreate-line-OVER - copia.gif" />
+    <None Include="Resources\edCreate-point.gif" />
+    <None Include="Resources\edCreate-point - copia.gif" />
+    <None Include="Resources\edCreate-point-ON.gif" />
+    <None Include="Resources\edCreate-point-ON - copia.gif" />
+    <None Include="Resources\edCreate-point-OVER.gif" />
+    <None Include="Resources\edCreate-point-OVER - copia.gif" />
+    <None Include="Resources\edCreate-polygon.gif" />
+    <None Include="Resources\edCreate-polygon - copia.gif" />
+    <None Include="Resources\edCreate-polygon-ON.gif" />
+    <None Include="Resources\edCreate-polygon-ON - copia.gif" />
+    <None Include="Resources\edCreate-polygon-OVER.gif" />
+    <None Include="Resources\edCreate-polygon-OVER - copia.gif" />
+    <None Include="Resources\edEnter-xy.gif" />
+    <None Include="Resources\edEnter-xy - copia.gif" />
+    <None Include="Resources\edInsert-vertex.gif" />
+    <None Include="Resources\edInsert-vertex - copia.gif" />
+    <None Include="Resources\edInsert-vertex-ON.gif" />
+    <None Include="Resources\edInsert-vertex-ON - copia.gif" />
+    <None Include="Resources\edInsert-vertex-OVER.gif" />
+    <None Include="Resources\edInsert-vertex-OVER - copia.gif" />
+    <None Include="Resources\edMerge-polygon.gif" />
+    <None Include="Resources\edMerge-polygon - copia.gif" />
+    <None Include="Resources\edMerge-polygon-ON.gif" />
+    <None Include="Resources\edMerge-polygon-ON - copia.gif" />
+    <None Include="Resources\edMerge-polygon-OVER.gif" />
+    <None Include="Resources\edMerge-polygon-OVER - copia.gif" />
+    <None Include="Resources\edMove.gif" />
+    <None Include="Resources\edMove - copia.gif" />
+    <None Include="Resources\edMove-ON.gif" />
+    <None Include="Resources\edMove-ON - copia.gif" />
+    <None Include="Resources\edMove-OVER.gif" />
+    <None Include="Resources\edMove-OVER - copia.gif" />
+    <None Include="Resources\edMove-vertex.gif" />
+    <None Include="Resources\edMove-vertex - copia.gif" />
+    <None Include="Resources\edMove-vertex-ON.gif" />
+    <None Include="Resources\edMove-vertex-ON - copia.gif" />
+    <None Include="Resources\edMove-vertex-OVER.gif" />
+    <None Include="Resources\edMove-vertex-OVER - copia.gif" />
+    <None Include="Resources\edRedo.gif" />
+    <None Include="Resources\edRedo - copia.gif" />
+    <None Include="Resources\edRedo-ON.gif" />
+    <None Include="Resources\edRedo-ON - copia.gif" />
+    <None Include="Resources\edRedo-OVER.gif" />
+    <None Include="Resources\edRedo-OVER - copia.gif" />
+    <None Include="Resources\edSave-editing.gif" />
+    <None Include="Resources\edSave-editing - copia.gif" />
+    <None Include="Resources\edSave-editing-ON.gif" />
+    <None Include="Resources\edSave-editing-ON - copia.gif" />
+    <None Include="Resources\edSave-editing-OVER.gif" />
+    <None Include="Resources\edSave-editing-OVER - copia.gif" />
+    <None Include="Resources\edSelect-feature.gif" />
+    <None Include="Resources\edSelect-feature - copia.gif" />
+    <None Include="Resources\edSelect-feature-editing.gif" />
+    <None Include="Resources\edSelect-feature-editing - copia.gif" />
+    <None Include="Resources\edSelect-feature-editing-ON.gif" />
+    <None Include="Resources\edSelect-feature-editing-ON - copia.gif" />
+    <None Include="Resources\edSelect-feature-editing-OVER.gif" />
+    <None Include="Resources\edSelect-feature-editing-OVER - copia.gif" />
+    <None Include="Resources\edSelect-feature-ON.gif" />
+    <None Include="Resources\edSelect-feature-ON - copia.gif" />
+    <None Include="Resources\edSelect-feature-OVER.gif" />
+    <None Include="Resources\edSelect-feature-OVER - copia.gif" />
+    <None Include="Resources\folder.gif" />
+    <None Include="Resources\folderopen.gif" />
+    <None Include="Resources\gpPoint.bmp" />
+    <None Include="Resources\gpPointD.bmp" />
+    <None Include="Resources\gpPointU.bmp" />
+    <None Include="Resources\gpPolygon.bmp" />
+    <None Include="Resources\gpPolygonD.bmp" />
+    <None Include="Resources\gpPolygonU.bmp" />
+    <None Include="Resources\gpPolyline.bmp" />
+    <None Include="Resources\gpPolylineD.bmp" />
+    <None Include="Resources\gpPolylineU.bmp" />
+    <None Include="Resources\move-to-bottom.gif" />
+    <None Include="Resources\move-to-top.gif" />
+    <None Include="Resources\next.gif" />
+    <None Include="Resources\zoom_level_bottom.gif" />
+    <None Include="Resources\zoom_level_top.gif" />
+    <None Include="Resources\Ray.ico" />
+    <None Include="Resources\customize.gif" />
+    <None Include="Resources\defaultFavicon.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\smartGroup.png" />
+    <None Include="Resources\ok.bmp" />
+    <None Include="Resources\okay_down.bmp" />
+    <None Include="Resources\okay_up.bmp" />
+    <None Include="Resources\pincelito1.bmp" />
+    <None Include="Resources\aero_arrow.cur" />
+    <None Include="Resources\up_rl.cur" />
+    <None Include="Resources\selecciona.cur" />
+    <None Include="Resources\class_standard.bmp" />
+    <None Include="Resources\et_ncopy16.bmp" />
+    <None Include="Resources\color_2.bmp" />
+    <None Include="Resources\color_3.bmp" />
+    <None Include="Resources\color_4.bmp" />
+    <None Include="Resources\color_5.bmp" />
+    <None Include="Resources\color_6.bmp" />
+    <None Include="Resources\color_1.bmp" />
+    <None Include="Resources\color_7.bmp" />
+    <None Include="Resources\color_8.bmp" />
+    <None Include="Resources\Iconos\SnapApaInt.ico" />
+    <None Include="Resources\Iconos\SnapCancel.ico" />
+    <None Include="Resources\Iconos\SnapCen.ico" />
+    <None Include="Resources\Iconos\SnapEnd.ico" />
+    <None Include="Resources\Iconos\SnapIns.ico" />
+    <None Include="Resources\Iconos\SnapInt.ico" />
+    <None Include="Resources\Iconos\SnapMid.ico" />
+    <None Include="Resources\Iconos\SnapNear.ico" />
+    <None Include="Resources\Iconos\SnapPer.ico" />
+    <None Include="Resources\Iconos\SnapQua.ico" />
+    <None Include="Resources\Iconos\SnapTar.ico" />
+    <None Include="Resources\Iconos\TextStyles.ico" />
+    <None Include="Resources\Iconos\TileHor.ico" />
+    <None Include="Resources\Iconos\TileVer.ico" />
+    <None Include="Resources\Iconos\xrefs.ico" />
+    <None Include="Resources\Iconos\About.ico" />
+    <None Include="Resources\Iconos\acro.ico" />
+    <None Include="Resources\Iconos\Area.ico" />
+    <None Include="Resources\Iconos\Arrange.ico" />
+    <None Include="Resources\Iconos\blockLibrary.ico" />
+    <None Include="Resources\Iconos\BringToFront.ico" />
+    <None Include="Resources\Iconos\CloseAll.ico" />
+    <None Include="Resources\Iconos\Dimstyles.ico" />
+    <None Include="Resources\Iconos\Dist.ico" />
+    <None Include="Resources\Iconos\ExportToImage.ico" />
+    <None Include="Resources\Iconos\ImageManager.ico" />
+    <None Include="Resources\Iconos\Layers.ico" />
+    <None Include="Resources\Iconos\Osnaps.ico" />
+    <None Include="Resources\Iconos\pan.ico" />
+    <None Include="Resources\Iconos\Pointstyle.ico" />
+    <None Include="Resources\Iconos\Properties.ico" />
+    <None Include="Resources\Iconos\Purge.ico" />
+    <None Include="Resources\Iconos\SaveAs.ico" />
+    <None Include="Resources\Iconos\SendToBack.ico" />
+    <None Include="Resources\Iconos\Sketch.ico" />
+    <None Include="Resources\SnapApaInt.bmp" />
+    <None Include="Resources\SnapCancel.bmp" />
+    <None Include="Resources\SnapCen.bmp" />
+    <None Include="Resources\SnapEnd.bmp" />
+    <None Include="Resources\SnapIns.bmp" />
+    <None Include="Resources\SnapInt.bmp" />
+    <None Include="Resources\SnapMid.bmp" />
+    <None Include="Resources\SnapNear.bmp" />
+    <None Include="Resources\SnapPer.bmp" />
+    <None Include="Resources\SnapQua.bmp" />
+    <None Include="Resources\SnapTan.bmp" />
+    <None Include="Resources\Actu_420.bmp" />
+    <None Include="Resources\muros.bmp" />
+    <Content Include="pd\notas.txt" />
+    <Content Include="Resources\3DVBACK.bmp" />
+    <Content Include="Resources\3DVBOTTOM.bmp" />
+    <Content Include="Resources\3DVFRONT.bmp" />
+    <Content Include="Resources\3DVLEFT.bmp" />
+    <Content Include="Resources\3DVNE.bmp" />
+    <Content Include="Resources\3DVNW.bmp" />
+    <Content Include="Resources\3DVRIGHT.bmp" />
+    <Content Include="Resources\3DVSE.bmp" />
+    <Content Include="Resources\3DVSW.bmp" />
+    <Content Include="Resources\3DVTOP.bmp" />
+    <Content Include="Resources\3D_orbit.bmp" />
+    <Content Include="Resources\ababconv.bmp" />
+    <Content Include="Resources\abaddrbk.bmp" />
+    <Content Include="Resources\ABlue.BMP" />
+    <Content Include="Resources\ABlueSm.BMP" />
+    <Content Include="z_click_one.txt" />
+    <Content Include="z_Notas.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{00000205-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

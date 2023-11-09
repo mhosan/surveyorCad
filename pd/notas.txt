@@ -1,0 +1,288 @@
+﻿
+23/7/2013:
+1)  Acortar lineas amarillas
+2)  Correcciòn del lindero que faltaba (salvo en esquina. Revisar)
+3)  Poner todos los espesores finitos
+4)  Suprimir superficie en identificador de parcelas linderas, debajo del circulo con el nro de pl.
+5)  Suprimir "m2"
+6)  Suprimir linea de eje en los muros.
+7)  Redondear todos los valores a dos decimales.
+8)  Se suprimiò el Zoom Extent luego de dibujar parcelas linderas (si hay que dibujar varias, esto jode)
+9)  Al cerrar el croquis que cierre la pantalla chica, ya que esta pantalla queda clavada y no se va por mas que se salga del croquis y
+    se ingrese a la parcela catastral.
+10) Correcciòn en el croquis, que al mover o escalear no llevaba todos los elementos.
+11) Boton Guardar posicion y angulo de textos, de la paleta de herramientas del Plano Digital solo se encuentra activa en "Parcela 
+    Vectorial". Cuando se esta posicionado en "Croquis" este boton aparecerà desactivado, ya que la ùnica forma de guardar cambios
+	dentro de la pantalla de "Croquis" es con el boton "Guardar" de la pantalla flotante "Datos Croquis"
+
+FALTA:
+1) Arreglar posiciones de textos en vista previa (amarillos). Nombres de calles al reves y que tenga dos decimales.
+2) Agregar boton derecho para repetir los comandos del pd
+3) En las pantalla de estilos separar nombre de calle de ancho de calle, que sean dos items separados
+   Las alturas de texto deben ser menores. 
+	nombre de calle: 2.5
+	ancho de calle: 1.0
+	Macizo: 2.5
+	superficie y desgignacion de parcela: 1.5
+	medidas parcela y mz: 1.00
+4) Hacer un "actualizar" para mostrar todo tal como quedarà en la vista definitiva, por ej. cuando se termina de dibujar pl y pl lind.
+
+
+6) Funcion "ubicar pl"...terminar?
+
+
+
+
+
+PARA LA DEMO (lo que hay actualmente desarrollado):
+
+1) Manejo de obras (pantlla inicial, con listado de las obras existentes)
+2) Datos de las obras (segunda pantalla)
+	* Datos de la obra
+	* Datos del inmueble
+	* Datos ente-identif.
+	* Objeto de la obra: Constitucion de e.p.
+3) Parcela catastral
+	*Mz x ptos., definir espacio circulatorio
+	*Mz linderos
+	*Dist. a esquina (no activa)
+	*Parcela lindera por puntos
+	*Insercion de simbolos (norte)
+	*Parcela principal, con deteccion de medidas, linderos y superficies.
+	*Muros, con anchos y cota
+	*Modificaciones en contenido y ubicacion de textos y guardar cambios.
+	*Manejar estilos de textos del PD
+	*Borrar elementos del pd
+4) Croquis
+	*escala de la pl, se puede cambiar (con sus elementos)
+	*mover la pl con sus elementos
+	*actualizar croquis
+	*guardar croquis.
+	*generar imagen para la cedula
+5) Cedula
+	*levanta los datos
+	*levanta el croquis
+	*exporta a pdf
+
+
+
+
+
+
+
+
+
+24/6/2013:
+1) Calculo de linderos. Modificado.
+2) Grilla de tipografias...
+
+
+
+
+
+
+
+
+23/04/2013
+Para hacer:
+1) Lineas auxiliares del mz que sean mas largas y se corten entre si
+2) Tipografia para el croquis: Times new roman.
+3) Mas grande: Designacino macizo: "estiloMz"
+4) mas chico: Nombre calle, superficie y designacion pl: "estiloNombreCalle"
+5) mas chico: Medida de la pl y mz: "estiloMedidaPl"
+6) mas chico: ancho muro: "estiloAnchoMuro"
+
+Hecho:
+1) modMacizo, dibujarMacizoPlanoDigital, lineas 303, 304 y 314, 315
+2) modDatosDb, borrarEntidad, lineas 653-659, 984-690, 714-720 (los if's del count de auxiliar)
+3) frmEntrada, en el load, llamado a "tipografias" (definido en modPublico)
+4) modPublico, declaracion de las variables pd_estiloMz, pd_estiloNombreCalle, pd_estiloMedidaPl, pd_estiloAnchoMuro
+5) modPublico, nuevo sub publico "tipografias"
+6) modBorrarEntidades, pdBorrarEntidades, nuevo if en la linea 28
+7) modDatosMacizo, guardoDatosParcela, un try en la linea 171
+8) modAbrirTrabajo, en cargarEntidadesTrabajoActivo, en la 660 nuevo if para el texto identificador del macizo.
+9) modAbrirTrabajo, en cargarEntidadesTrabajoActivo, en todos los if de los carteles se agrego el estilo
+10) modParcela, en numerarVerticesParcela, agregar estilo en 998 y 1020
+
+Seba:
+	 Cuando se da un alta de una nueva obra, no se ve el numero en la grilla hasta que se sale del sistema y se vuelve a ingresar.
+
+
+
+
+
+14/04/2013
+
+modPruebaMacizo2, el if de nombre de calle de la linea 137
+agregado de carpeta: "_instaladorPD"
+
+
+
+
+
+
+
+
+
+
+
+
+29/03/2013
+
+modParcela.vb (numerar los vertices)
+modMacizo.vb (numerar los vertices) (dibujarMacizoPlanoDigital) (tooltips de ancho de calle, nombre de calle, ancho de lado macizo)
+modAbrirTrabajo.vb (tooltips de ancho de calle, nombre de calle, ancho de lado macizo...)
+modPegarDatosEntidad.vb
+modPublico.vb (dibujar norte)
+frmDatosCroquis.vb (guardar y actualizar)
+modDatosDB.vb (borrarCroquis) (borrar macizo) (borrar anchos de calle, nombre de calle y medida macizo del macizo borrado)
+modDatosMacizo.vb 
+modPruebaMacizo2 (el select case de la linea 165, para los anchos de calle)
+
+Seba:
+En frmPruebaMacizo, cuando se hace click en el boton cancelar, borra toda la obra..
+y si tenes mas de un macizo igual hace pelota todo!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+26/03/2013:
+
+modMuros.vb
+modDatos.vb
+modParcela.vb
+modAbrirTrabajo.vb
+frmDatosCroquis.vb
+frmPropiedades.vb
+frmPruebaParcela: 
+	linea 95, desactivar el msgbox calle.
+	t_parcela y t_superficie anular read only.
+	139 y 150 bander = false (quedaba asignada a true)
+
+
+
+
+
+
+
+
+
+
+
+
+
+20/03/2013:
+
+modDatosDB.vb
+
+para seba: 
+
+frmInicial.vb, cargo_los_campos, linea 285
+modDatos_Macizo, en carga_EntidadesCalle, hay un if que gu
+arda solo para obra nueva, si se borra el macizo y se quiere volver 
+a cargar un macizo no se puede.
+
+
+
+
+
+
+
+
+
+
+
+Para ver con Seba:
+
+1) Cuando se da de alta un laburo nuevo, hay que llenar primero los campos de la nomenclatura, ya que si se comienza
+   a cargar desde arriba, por los datos del partido, da un error en frmInicial.vb, Private Sub T_circ_LostFocus en la
+   linea 739.
+
+2) En la pantalla de parcela, no muestra todas las calles. Muestra solo una (serà porque en el ejemplo las cuatro quedaron
+   con el mismo nombre?)
+   
+3) Cuando se carga un trabajo da error en frmInicial.vb, en la linea 213:
+   Tcomitente.Text = tab.Rows(0).Item("nombre") & "," & "" & tab.Rows(0).Item("apellido")
+
+   Ttitular.Text = tab.Rows(0).Item("nombre") & "," & "" & tab.Rows(0).Item("apellido"), en la linea 227
+
+   Tcontribuyene.Text = tab.Rows(0).Item("nombre") & "," & "" & tab.Rows(0).Item("apellido"), en la linea 242
+
+   Tcliente.Text = tab.Rows(0).Item("nombre") & "," & "" & tab.Rows(0).Item("apellido"), en la 256
+
+   'If (IsNumeric((CInt(T_circ.Text))) And (CInt(T_circ.Text) < 21)) Then
+        '    T_circ.Text = VerValor(T_circ.Text)
+'Else
+        '    T_circ.Text = ""
+
+        'End If
+
+		el if es en la 742
+
+4) Cuando abre la pantalla de parcela, aparecen las calles repetidas. Repite "Presidente Peron", aunque no existe-
+
+5) Ojo que en la base de seba no esta la tabla segmentos ni croquis.
+
+6) en esta version se modifico modParcela para que guarde solamente al salir de la pantalla de parcela de seba (faltaba activar esto).
+
+7) en la pantalla de parcela si no se ingresa un numero de parcela da error al guardar (capturarlo).
+
+
+
+
+
+
+
+                                         abrirTrabajo
+										      |
+											  |
+								idTrabajo = identificadorTrabajo
+								              |
+										  conectar()
+										      |
+				       tabla: Los datos generales de un trabajo determinado
+				  tabla = Select * from "trabajos" where idTrabajo = trabajo actual
+				                              |
+		          tblTrabajoEntidades: Todas las entidades de un trabajo determinado
+		  tblTrabajoEntidades = Select * from trabajoEntidad where idTrabajo = trabajo actual
+		                                      |
+											  |
+		--------------------------------------|
+		|  tblEntidad: Un solo registro con tipoEntidadLogica y tipoEntidadGeometrica
+		|          tblEntidad = Select * from Entidades where idEntidad = ...
+		|                                     |
+		|              tblCoordenadas = select * from coordenadas where...
+		|                                     |
+		|              tblAtributosLogicos = select * from atributosLogicos (..)
+		|                                     |
+		| tblAtributosGeometricos = select * from atributosGeometricos (tipo linea, espesor, color)
+		|                                     |                 
+	for each                                  |
+   entidad en            select case tblEntidad("tipoEntidadGeometrica")
+tblTrabajoEntidades              |
+        |                        |
+		|                        |--->Case is "polilinea"
+	    |                        |      ->Definir entidad grafica tipo "polilinea", cargarle las coord, color y espesor.
+		|                        |      ->Agregar entidad al dibujo
+		|                        |      ->Zoom extents
+		|                        |      ->Pegar datos en tooltips de la polilinea
+		|                        |      ->numerar los vertices
+		|                        |      ->cargar los datos del macizo en la estructura "macizo" (21/11/2012)
+        |                        |--->Case is "Bloque"
+		|                               ->leer los datos del bloque (punto de insercino, escala, y angulo) desde la tabla "simbolos"
+		|                               ->llamar a modPublico.dibujarNorte (datos), para dibujar el norte
+		|
+		|--------------------------------------|
+		                                       |
+											   |
+											  fin

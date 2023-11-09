@@ -1,0 +1,156 @@
+﻿------ Build started: Project: cpaCad, Configuration: Debug x86 ------
+C:\plano digital desa_12_02_2013\frmPpal.vb(195) : warning BC42017: Late bound resolution; runtime errors could occur.
+C:\plano digital desa_12_02_2013\frmPpal.vb(195) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\frmPpal.vb(199) : warning BC42016: Implicit conversion from 'Object' to 'String'.
+C:\plano digital desa_12_02_2013\frmPpal.vb(199) : warning BC42017: Late bound resolution; runtime errors could occur.
+C:\plano digital desa_12_02_2013\frmPpal.vb(510) : warning BC42104: Variable 'nombreSolapaEspacioPapel' is used before it has been assigned a value. A null reference exception could result at runtime.
+C:\plano digital desa_12_02_2013\frmPpal.vb(752) : warning BC42016: Implicit conversion from 'String' to 'Char'.
+C:\plano digital desa_12_02_2013\frmPpal.vb(797) : warning BC42024: Unused local variable: 'elMtext'.
+C:\plano digital desa_12_02_2013\frmPpal.vb(823) : warning BC42016: Implicit conversion from 'VectorDraw.Professional.vdPrimaries.vdFigure' to 'VectorDraw.Professional.vdFigures.vdInsert'.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1241) : warning BC42016: Implicit conversion from 'VectorDraw.Professional.Constants.VdConstLineWeight' to 'String'.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1311) : warning BC42017: Late bound resolution; runtime errors could occur.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1311) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1322) : warning BC42017: Late bound resolution; runtime errors could occur.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1322) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1334) : warning BC42017: Late bound resolution; runtime errors could occur.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1334) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1346) : warning BC42017: Late bound resolution; runtime errors could occur.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1346) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1358) : warning BC42017: Late bound resolution; runtime errors could occur.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1358) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1370) : warning BC42017: Late bound resolution; runtime errors could occur.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1370) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1381) : warning BC42017: Late bound resolution; runtime errors could occur.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1381) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1393) : warning BC42017: Late bound resolution; runtime errors could occur.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1393) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1405) : warning BC42017: Late bound resolution; runtime errors could occur.
+C:\plano digital desa_12_02_2013\frmPpal.vb(1405) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\frmPpal.vb(2043) : warning BC41999: Implicit conversion from 'Double' to 'Integer' in copying the value of 'ByRef' parameter 'retvalue' back to the matching argument.
+vbc : warning BC42206: Maximum number of warnings has been exceeded.
+C:\plano digital desa_12_02_2013\frmTextEdit.Designer.vb(176) : warning BC40004: WithEvents variable 'Label4' conflicts with WithEvents variable 'Label4' in the base class 'frmPropiedades' and should be declared 'Shadows'.
+C:\plano digital desa_12_02_2013\modCertifAmoj.vb(126) : warning BC42104: Variable 'laManzana' is used before it has been assigned a value. A null reference exception could result at runtime.
+C:\plano digital desa_12_02_2013\modCertifAmoj.vb(132) : warning BC42104: Variable 'laParcela' is used before it has been assigned a value. A null reference exception could result at runtime.
+C:\plano digital desa_12_02_2013\modCertifAmoj.vb(171) : warning BC42104: Variable 'nomencla' is used before it has been assigned a value. A null reference exception could result at runtime.
+C:\plano digital desa_12_02_2013\modCertifAmoj.vb(231) : warning BC42016: Implicit conversion from 'VectorDraw.Professional.vdPrimaries.vdFigure' to 'VectorDraw.Professional.vdFigures.vdText'.
+C:\plano digital desa_12_02_2013\modCertifAmoj.vb(247) : warning BC42016: Implicit conversion from 'VectorDraw.Professional.vdPrimaries.vdFigure' to 'VectorDraw.Professional.vdFigures.vdText'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(6) : warning BC42020: Variable declaration without an 'As' clause; type of Object assumed.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(6) : warning BC42020: Variable declaration without an 'As' clause; type of Object assumed.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(6) : warning BC42020: Variable declaration without an 'As' clause; type of Object assumed.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(6) : warning BC42020: Variable declaration without an 'As' clause; type of Object assumed.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(6) : warning BC42020: Variable declaration without an 'As' clause; type of Object assumed.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(6) : warning BC42020: Variable declaration without an 'As' clause; type of Object assumed.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(15) : warning BC42019: Operands of type Object used for operator '-'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(15) : warning BC42016: Implicit conversion from 'Object' to 'Double'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(15) : warning BC42019: Operands of type Object used for operator '-'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(15) : warning BC42019: Operands of type Object used for operator '-'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(15) : warning BC42016: Implicit conversion from 'Object' to 'Double'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(15) : warning BC42019: Operands of type Object used for operator '-'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(17) : warning BC42019: Operands of type Object used for operator '*'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(17) : warning BC42016: Implicit conversion from 'Object' to 'Double'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(17) : warning BC42019: Operands of type Object used for operator '/'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(18) : warning BC42019: Operands of type Object used for operator '*'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(18) : warning BC42016: Implicit conversion from 'Object' to 'Double'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(18) : warning BC42019: Operands of type Object used for operator '/'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(19) : warning BC42016: Implicit conversion from 'Object' to 'Single'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(19) : warning BC42019: Operands of type Object used for operator '-'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(19) : warning BC42019: Operands of type Object used for operator '-'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(19) : warning BC42019: Operands of type Object used for operator '*'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(19) : warning BC42019: Operands of type Object used for operator '+'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(19) : warning BC42016: Implicit conversion from 'Object' to 'Single'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(19) : warning BC42019: Operands of type Object used for operator '+'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(19) : warning BC42019: Operands of type Object used for operator '*'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(32) : warning BC42016: Implicit conversion from 'Single' to 'Integer'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(32) : warning BC42016: Implicit conversion from 'Single' to 'Integer'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(32) : warning BC42016: Implicit conversion from 'Single' to 'Integer'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(32) : warning BC42016: Implicit conversion from 'Single' to 'Integer'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(37) : warning BC42016: Implicit conversion from 'Double' to 'Single'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(37) : warning BC42016: Implicit conversion from 'Double' to 'Single'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(50) : warning BC42016: Implicit conversion from 'Single' to 'Integer'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(50) : warning BC42016: Implicit conversion from 'Single' to 'Integer'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(50) : warning BC42016: Implicit conversion from 'Single' to 'Integer'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(50) : warning BC42016: Implicit conversion from 'Single' to 'Integer'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(55) : warning BC42016: Implicit conversion from 'Double' to 'Single'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(55) : warning BC42016: Implicit conversion from 'Double' to 'Single'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(79) : warning BC42021: Function without an 'As' clause; return type of Object assumed.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(79) : warning BC42020: Variable declaration without an 'As' clause; type of Object assumed.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(79) : warning BC42020: Variable declaration without an 'As' clause; type of Object assumed.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(79) : warning BC42020: Variable declaration without an 'As' clause; type of Object assumed.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(80) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(80) : warning BC42019: Operands of type Object used for operator 'And'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(80) : warning BC42016: Implicit conversion from 'Object' to 'Boolean'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(80) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(80) : warning BC42019: Operands of type Object used for operator 'And'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(81) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(81) : warning BC42019: Operands of type Object used for operator 'Or'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(81) : warning BC42016: Implicit conversion from 'Object' to 'Boolean'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(81) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(81) : warning BC42019: Operands of type Object used for operator 'Or'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(82) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(82) : warning BC42019: Operands of type Object used for operator 'And'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(82) : warning BC42016: Implicit conversion from 'Object' to 'Boolean'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(82) : warning BC42019: Operands of type Object used for operator '>'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(82) : warning BC42019: Operands of type Object used for operator 'And'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(83) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(83) : warning BC42019: Operands of type Object used for operator 'And'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(83) : warning BC42016: Implicit conversion from 'Object' to 'Boolean'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(83) : warning BC42019: Operands of type Object used for operator '<'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(83) : warning BC42019: Operands of type Object used for operator 'And'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(84) : warning BC42019: Operands of type Object used for operator '>'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(84) : warning BC42019: Operands of type Object used for operator 'And'; runtime errors could occur.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(84) : warning BC42016: Implicit conversion from 'Object' to 'Boolean'.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(84) : warning BC42018: Operands of type Object used for operator '='; use the 'Is' operator to test object identity.
+C:\plano digital desa_12_02_2013\pd\modFuncionesMacizo.vb(84) : warning BC42019: Operands of type Object used for operator 'And'; runtime errors could occur.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The text box ‘txt_calle_titu’ and the text box ‘txt_dpto_titu’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The text box ‘txt_calle_titu’ and the text box ‘txt_piso_titu’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The text box ‘txt_calle_titu’ and the text box ‘txt_num_calle_titu’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The text box ‘Textbox2’ and the text box ‘txt_calle_titu’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The text box ‘TxtUbicacionCalle’ and the text box ‘TxtUbicacionEntreCalle2’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The text box ‘TxtUbicacionCalle’ and the text box ‘TxtUbicacionEntreCalle1’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The text box ‘TxtUbicacionNro’ and the text box ‘TxtUbicacionEntreCalle2’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaDorso’ and the image ‘ImgCroquis’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaDorso’ and the text box ‘TxtGas’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaDorso’ and the text box ‘TxtCloacas’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaDorso’ and the text box ‘TxtAguaCorriente’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaDorso’ and the text box ‘TxtElectrica’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaDorso’ and the text box ‘TxtAlumbrado’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtPartida’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtPartido’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtNCFraccion’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtNCManzana’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtNCParcela’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtNCQuinta’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtNCChacra’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtNCSeccion’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtNCCircunscripcion’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtUbicacionCalle’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtUbicacionNro’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtUbicacionEntreCalle2’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtUbicacionEntreCalle1’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtUbicacionCodigoPosta’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtUbicacionLocalidad’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘Textbox5’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtDesignacion’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtMedidas’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘Textbox6’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘txt_apellido_titular’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘Textbox2’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘txt_calle_titu’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘txt_dpto_titu’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘txt_piso_titu’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘txt_num_calle_titu’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘txt_cp_titu’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘txt_localidad_titu’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘txt_prov_titu’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtPAManzana’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtPAParcela’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtPAPartido’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtPAQuinta’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtPAFraccion’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtPASeccion’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtPAChacra’ overlap. Overlapping report items are not supported in all renderers.
+pd\RptCedulaCatastral.rdlc : warning rsOverlappingReportItems: The image ‘ImgCedulaFrente’ and the text box ‘TxtPACirc’ overlap. Overlapping report items are not supported in all renderers.
+  cpaCad -> C:\plano digital desa_12_02_2013\bin\Pavilion\cpaCadV2.exe
+------ Skipped Build: Project: InstalaCpaCad, Configuration: Debug ------
+Project not selected to build for this solution configuration 
+========== Build: 1 succeeded or up-to-date, 0 failed, 1 skipped ==========

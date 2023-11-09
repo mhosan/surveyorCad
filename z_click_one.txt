@@ -1,0 +1,9 @@
+﻿
+Todos los programas creados con Visual Basic requieren Microsoft .NET Framework 3.5. 
+Si va a distribuir el programa por correo electrónico, asegúrese de que .NET Framework 
+está instalado en los equipos de los destinatarios.
+
+La aplicación .NET Framework se distribuye con muchos otros programas o se puede 
+descargar del sitio web de Microsoft. Para comprobar si .NET Framework está instalado, 
+vaya al Panel de control, seleccione Agregar o quitar programas y busque Microsoft .NET
+Framework 3,5.

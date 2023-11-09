@@ -1,0 +1,27 @@
+﻿BD:
+tabla: servicios add campo domicilio_fiscal 
+tabla: personas add campo codigo_p
+=====================================================================
+modDatosMacizo (guardodatosparcela, agregue campos domicilio_fiscal)
+=====================================================================
+agregue la infos Cedula
+=====================================================================
+frmInicial boton Titular --------->   If id_ti = "0" Then Exit Sub
+frminicial btnCedula -------------> todo el codigo
+frminicial btnaceptar-------------> habialitar el boton modificar luego de la pregunta "desea guardar los datos"
+frminical t_circ lost_focus IsNumeric(.....)
+=====================================================================
+modVarCedula  infos Cedula
+=====================================================================
+frmbuscapersonas
+=====================================================================
+frmPersonas
+=====================================================================
+Frmpruebamacizo(  en el load / BtnAceptar.Enabled = False////////)
+frmprubamacizo( If j = i Then
+                BtnAceptar.Enabled = True
+                ep.x = _macizo.puntos(0).X
+                ep.y = _macizo.puntos(0).Y
+                ep.z = 0.0)--------------> btnsiguiente
+=====================================================================
+

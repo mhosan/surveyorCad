@@ -1,0 +1,29 @@
+Private Sub button2_Click(sender As Object, e As EventArgs)
+	Dim flag As Boolean = MultipleCopy(vdFramedControl1.BaseControl.ActiveDocument)
+	Me.Text = flag.ToString()
+End Sub
+
+Private Function MultipleCopy(doc As vdDocument) As [Boolean]
+	Dim isCopy As Boolean = True
+	doc.Prompt("Select Entities to copy: ")
+	If Not doc.CommandAction.CmdSelect("USER") Then
+		doc.Prompt("")
+		Return False
+	End If
+	Dim sel As vdSelection = doc.Selections.FindName("VDRAW_PREVIOUS_SELSET")
+	If (sel Is Nothing) Or (sel.Count < 1) Then
+		Return False
+	End If
+	doc.Prompt("Copy from Point: ")
+	Dim ptFrom As gPoint = TryCast(doc.ActionUtility.getUserPoint(), gPoint)
+	If (ptFrom Is Nothing) Then
+		doc.Prompt("")
+		Return False
+	End If
+
+	While isCopy
+		isCopy = doc.CommandAction.CmdCopy(sel, ptFrom, "USER")
+	End While
+	doc.Prompt("")
+	Return True
+End Function

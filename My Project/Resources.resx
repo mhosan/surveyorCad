@@ -1,0 +1,1495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Properties" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Properties.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gpPolygonD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gpPolygonD.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoomIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\zoomIN.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3DVBOTTOM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3DVBOTTOM.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_clipit24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_clipit24.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditAttrib" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\EditAttrib.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pan.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\mtext.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grips_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grips_3.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Linea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Linea.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CopyClipV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CopyClipV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_point_OVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-point-OVER.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_point_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-point-ON.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMerge_polygon___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMerge-polygon - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grips_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grips_2.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_point___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-point - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Configurar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Configurar.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PolylineV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PolylineV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edClear_selected_feature_OVER___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edClear-selected-feature-OVER - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedoV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedoV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\cone.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Actu_420" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Actu_420.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_line_ON___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-line-ON - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_fstsel24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_fstsel24.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Circle.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_mirror.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSelect_feature_editing_OVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSelect-feature-editing-OVER.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="offset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\offset.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomW1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\ZoomW.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_mid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_mid.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_copyclip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_copyclip.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DELETE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DELETE.BMP;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edRedo_OVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edRedo-OVER.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_clipit16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_clipit16.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSelect_feature___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSelect-feature - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UndoV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UndoV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3D_orbit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3D_orbit.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CutV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CutV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edEnter_xy___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edEnter-xy - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dropdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dropdown.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_polygon_OVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-polygon-OVER.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_imprimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_imprimir.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_Breakl24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_Breakl24.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_nuevo.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color_3.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_line___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-line - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSelect_feature_OVER___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSelect-feature-OVER - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_linea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_linea.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Textos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Textos.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ray1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ray.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color_2.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Line" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Line.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Snap_to_Apparent_Intersection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Snap to Apparent Intersection.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Layers1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Layers.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_point_OVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-point-OVER.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_texto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_texto.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\down - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edEnter_xy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edEnter-xy.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_polygon_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-polygon-ON.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3DVNW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3DVNW.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Modificar_Borrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Modificar_Borrar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_break" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_break.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FilletV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FilletV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Snap_to_Tangent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Snap to Tangent.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pegar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pegar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_non" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_non.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xrefs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\xrefs.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomEV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomEV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_polygon___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-polygon - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSave_editing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSave-editing.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="makeblock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\makeblock.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_ZW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_ZW.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edClear_selected_feature" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edClear-selected-feature.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_circulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_circulo.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomOUT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\ZoomOUT.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_line_OVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-line-OVER.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Polilinea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Polilinea.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RotateV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RotateV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapCancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\SnapCancel.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DimAlign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\DimAlign.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveAs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\SaveAs.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMove_vertex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMove-vertex.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_rectang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_rectang.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fillet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\fillet.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edInsert_vertex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edInsert-vertex.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_poli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_poli.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_line___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-line - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\image.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\XLine.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="collapse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\collapse.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doubleLeft___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doubleLeft - copia.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Layers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Layers.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="move_to_bottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\move-to-bottom.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edClear_selected_feature_ON___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edClear-selected-feature-ON - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edInsert_vertex_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edInsert-vertex-ON.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Snap_to_Cuadrant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Snap to Cuadrant.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TextStyles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\TextStyles.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dimdiam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Dimdiam.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="okay_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\okay_down.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom_level_bottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zoom_level_bottom.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Area" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Area.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MHcad_icono" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MHcad_icono.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMerge_polygon_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMerge-polygon-ON.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3DVBACK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3DVBACK.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pointstyle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Pointstyle.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mhcad_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mhcad_48x48.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomWV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomWV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gpPolyline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gpPolyline.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PasteV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PasteV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reahcer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Reahcer.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSelect_feature_editing_OVER___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSelect-feature-editing-OVER - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomE.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Desactivado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Desactivado.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoveV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MoveV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Modificar_Simetria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Modificar_Simetria.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomRTV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomRTV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gpPoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gpPoint.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_point_OVER___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-point-OVER - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="contextMenuPanTo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contextMenuPanTo.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blockLibrary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\blockLibrary.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMove_vertex_OVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMove-vertex-OVER.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Purge.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Dist.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="copyent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\copyent.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMerge_polygon_OVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMerge-polygon-OVER.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TileVer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\TileVer.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_end" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_end.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_polygon_ON___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-polygon-ON - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="okay_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\okay_up.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_polygon_OVER___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-polygon-OVER - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saveFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\saveFile.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_point_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-point-ON.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Text.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClipCopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\ClipCopy.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Circulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Circulo.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapNear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\SnapNear.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapCancel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SnapCancel.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Move" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Move.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Undo.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3DVTOP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3DVTOP.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_rtucs24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_rtucs24.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gpPointD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gpPointD.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\mirror.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gpPolylineU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gpPolylineU.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_line_OVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-line-OVER.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stretch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\stretch.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_shwurl16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_shwurl16.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_mstrch16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_mstrch16.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3D_wire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3D_wire.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_point_OVER___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-point-OVER - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CopyV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CopyV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_fstsel16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_fstsel16.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_line_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-line-ON.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Extend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Extend.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="break" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\break.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSelect_feature_editing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSelect-feature-editing.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_fillet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_fillet.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Redo.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_explode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_explode.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DimHor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\DimHor.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color_1.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Ray.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Modificar_Pegar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Modificar_Pegar.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dropdown___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dropdown - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ok.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_abrir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_abrir.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BringToFront" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\BringToFront.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSelect_feature" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSelect-feature.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_line_OVER___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-line-OVER - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMove_vertex_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMove-vertex-ON.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="collapse___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\collapse - copia.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edInsert_vertex_OVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edInsert-vertex-OVER.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3DVLEFT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3DVLEFT.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Recortar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Recortar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Point" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Point.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapEnd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\SnapEnd.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_polygon_OVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-polygon-OVER.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_ZE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_ZE.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mhcad_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mhcad_16x16.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_punto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_punto.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_line_OVER___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-line-OVER - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_per" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_per.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3DVSE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3DVSE.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MergeAnim_16i" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MergeAnim_16i.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diskete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diskete.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_cen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_cen.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mhcad3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\mhcad3.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="class_standard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\class_standard.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_Breakl16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_Breakl16.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_chgtxt24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_chgtxt24.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSave_editing___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSave-editing - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cortar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cortar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edInsert_vertex_ON___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edInsert-vertex-ON - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ARRAYPolar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\ARRAYPolar.ICO;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ltypes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ltypes.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlinearV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlinearV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_point___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-point - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TextV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TextV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pincelito1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pincelito1.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExtendV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExtendV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_arctxt16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_arctxt16.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DimVer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\DimVer.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BreakV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BreakV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rotar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rotar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapPer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SnapPer.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color_8.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomP.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Arc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Arc.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMove_OVER___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMove-OVER - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoomALL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\zoomALL.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMove_vertex_ON___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMove-vertex-ON - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gpPointU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gpPointU.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapQua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\SnapQua.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChpropV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChpropV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\OpenFile.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMerge_polygon_ON___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMerge-polygon-ON - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_arctxt24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_arctxt24.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Snap_to_Endpoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Snap to Endpoint.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_pan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_pan.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_xrflst24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_xrflst24.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edRedo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edRedo.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_copy.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RectangV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RectangV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapIns" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\SnapIns.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSelect_feature_editing_ON___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSelect-feature-editing-ON - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HatchV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HatchV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_point" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-point.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Rect.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EllipseV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EllipseV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Explode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Explode.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="regen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\regen.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pan1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\pan.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="defaultFavicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\defaultFavicon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSave_editing_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSave-editing-ON.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MirrorV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MirrorV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSave_editing_ON___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSave-editing-ON - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3dviewshade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3dviewshade.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="desktop_icon_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\desktop_icon_01.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="move_to_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\move-to-top.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapIns1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SnapIns.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_line_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-line-ON.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mhcad_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\mhcad.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3D_ucs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3D_ucs.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_point_ON___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-point-ON - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMove_ON___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMove-ON - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_undo.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Poligono" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Poligono.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color_6.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Osnaps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Osnaps.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edClear_selected_feature_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edClear-selected-feature-ON.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Borrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Borrar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zoom.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_redo.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_scale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_scale.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_alinear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_alinear.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copy.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_pegar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_pegar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSelect_feature_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSelect-feature-ON.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Polyline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Polyline.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edInsert_vertex___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edInsert-vertex - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mover.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_line" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-line.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doubleRight___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doubleRight - copia.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folderopen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folderopen.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bHatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\bHatch.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bHatch1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\bHatch.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dismiss___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dismiss - copia.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddAttrib" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\AddAttrib.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Deshacer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Deshacer.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_select1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\select.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArcV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArcV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSave_editing_OVER___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSave-editing-OVER - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_ncopy16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_ncopy16.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_line" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-line.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom_level_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zoom_level_top.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMove_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMove-ON.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Impresora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Impresora.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_female" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_female.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_polygon___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-polygon - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapCen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SnapCen.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapApaInt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\SnapApaInt.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapPer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\SnapPer.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMove_OVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMove-OVER.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapEnd1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SnapEnd.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomAmpliar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomAmpliar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Copiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copiar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapTan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SnapTan.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\printFile.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScaleV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScaleV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Archivo_Nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Archivo Nuevo.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomPV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomPV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LineV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LineV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edClear_selected_feature_OVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edClear-selected-feature-OVER.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrimV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TrimV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSave_editing_OVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSave-editing-OVER.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\trim.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CloseAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\CloseAll.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\ZoomE.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_rtucs16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_rtucs16.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Modificar_Escala" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Modificar_Escala.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_trim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_trim.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DimRot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\DimRot.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapQua1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SnapQua.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_rotar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_rotar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_hatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_hatch.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smartGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smartGroup.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapTar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\SnapTar.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Activado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Activado.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomReducir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomReducir.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3dEdgeON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3dEdgeON.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_extend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_extend.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edRedo_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edRedo-ON.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mhcad_16x161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\mhcad_16x16.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mhcad_rectang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mhcad_rectang.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_mover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_mover.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportToImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\ExportToImage.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OffsetV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OffsetV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="selecciona" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\selecciona.cur;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="contextMenuRefresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contextMenuRefresh.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Elipse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Elipse.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_confOsnap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_confOsnap.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edRedo_OVER___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edRedo-OVER - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_Erase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Erase.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cpaAzu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\cpaAzu.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_cut.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LWeigth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LWeigth.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="None" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\None.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="muros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\muros.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rectangulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangulo.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scale1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Scale.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mesh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\mesh.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomRT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomRT.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_prop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_prop.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Modificar_Simetria1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Modificar_Simetria.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SendToBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\SendToBack.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doubleLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doubleLeft.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_chgtxt16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_chgtxt16.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3DVFRONT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3DVFRONT.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\select.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_polygon_OVER___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-polygon-OVER - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mhcad_rectang1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mhcad_rectang.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color_wheel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color_wheel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="contextMenuPanTo___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contextMenuPanTo - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dismiss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dismiss.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Snap_to_Center" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Snap to Center.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scale.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\InsertBlock.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\face.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Snap_to_Midpoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Snap to Midpoint.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3DVRIGHT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3DVRIGHT.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ayuda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ayuda.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Leader" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Leader.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3D_wcs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3D_wcs.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_GATTE24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_GATTE24.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImageManager" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\ImageManager.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_polygon_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-polygon-ON.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3D_Hide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3D_Hide.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_arco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_arco.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edClear_selected_feature___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edClear-selected-feature - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3dPmesh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3dPmesh.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grips" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grips.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EraseV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EraseV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\down.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSelect_feature_OVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSelect-feature-OVER.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_point" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-point.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_ZP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_ZP.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\cut.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edRedo___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edRedo - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3DVNE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3DVNE.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCreate_polygon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCreate-polygon.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mhcad_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mhcad_32x32.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMove_vertex_OVER___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMove-vertex-OVER - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="writeblock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\writeblock.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color_5.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_mocoro24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_mocoro24.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cpaAzu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cpaAzu.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="box" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\box.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DimRadial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\DimRadial.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="et_xrflst16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\et_xrflst16.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color_4.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapMid1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SnapMid.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rehacer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rehacer.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMove_vertex___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMove-vertex - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sketch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Sketch.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dimstyles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Dimstyles.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customize.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSelect_feature_editing___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSelect-feature-editing - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gpPolylineD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gpPolylineD.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Punto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Punto.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Snap_to_Perpendicular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Snap to Perpendicular.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_point_ON___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-point-ON - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExplodeV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExplodeV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="array" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\array.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapCen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\SnapCen.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoomP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\zoomP.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color_7.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TileHor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\TileHor.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3DVSW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3DVSW.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gpPolygonU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gpPolygonU.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_line_ON___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-line-ON - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tramados__Hatch_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tramados (Hatch).bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Arrange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Arrange.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapInt1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SnapInt.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="desktop_icon_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\desktop_icon_03.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3drender" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\3drender.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_nearest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_nearest.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Archivo_Abrir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Archivo Abrir.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rotate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\Rotate.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapMid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\SnapMid.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edInsert_vertex_OVER___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edInsert-vertex-OVER - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CircleV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CircleV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_borrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_borrar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSelect_feature_editing_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSelect-feature-editing-ON.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edSelect_feature_ON___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edSelect-feature-ON - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edRedo_ON___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edRedo-ON - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomW.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapInt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\SnapInt.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_offset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_offset.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EXPLODE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\EXPLODE.ICO;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMove.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapNear1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SnapNear.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\paste.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mhcad_rectang_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mhcad_rectang_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="contextMenuRefresh___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contextMenuRefresh - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mhcad_rectang_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mhcad_rectang_2.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\NewFile.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="actualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\actualizar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="redraw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\redraw.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_polygon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-polygon.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="About" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\About.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emtext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\emtext.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\next.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="contextMenuReExecute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contextMenuReExecute.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\acro.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PointV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PointV.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMerge_polygon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMerge-polygon.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ellipse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\ellipse.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Arco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Arco.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_elipse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_elipse.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YESNO03A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\YESNO03A.ICO;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="extend1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\extend.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Deshacer2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Deshacer2.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnapApaInt1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SnapApaInt.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acad_int" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acad_int.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sphere" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iconos\sphere.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gpPolygon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gpPolygon.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMerge_polygon_OVER___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMerge-polygon-OVER - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edMove___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edMove - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doubleRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doubleRight.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Help.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edCopy_polygon_ON___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edCopy-polygon-ON - copia.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vcard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vcard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
